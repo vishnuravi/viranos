@@ -30,34 +30,34 @@ enum StudyTableItem: Int {
         case .survey:
             return StudyTasks.sf12Task
         case .activeTask:
-            return StudyTasks.walkingTask
+            return StudyTasks.memoryTask
         }
     }
 
     var title: String {
         switch self {
         case .survey:
-            return "Survey Sample"
+            return "COVID-19 Questionnaire"
         case .activeTask:
-            return "Active Task Sample"
+            return "Memory Task"
         }
     }
 
     var subtitle: String {
         switch self {
         case .survey:
-            return "Answer some short questions."
+            return "Reports symptoms and functioning"
         case .activeTask:
-            return "Perform an action."
+            return "Complete a brief task"
         }
     }
 
     var image: UIImage? {
         switch self {
         case .survey:
-            return UIImage(named: "SurveyIcon")
+            return UIImage(systemName: "square.and.pencil")
         default:
-            return UIImage(named: "ActivityIcon")
+            return UIImage(systemName: "memories")
         }
     }
     
