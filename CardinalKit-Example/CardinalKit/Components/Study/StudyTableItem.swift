@@ -57,7 +57,7 @@ enum StudyTableItem: Int {
         case .survey:
             return UIImage(systemName: "square.and.pencil")
         default:
-            return UIImage(systemName: "staroflife")
+            return UIImage(systemName: "memories")
         }
     }
     
