@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77496A7A250D7BC600DBF1E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77496A79250D7BC600DBF1E7 /* GoogleService-Info.plist */; };
 		8E0A43A7244A4A0400656518 /* ProfileTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437A244A4A0400656518 /* ProfileTableItem.swift */; };
 		8E0A43A8244A4A0400656518 /* StaticProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437B244A4A0400656518 /* StaticProfileViewController.swift */; };
 		8E0A43AA244A4A0400656518 /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437F244A4A0400656518 /* WithdrawalViewController.swift */; };
@@ -36,7 +37,6 @@
 		8E67519C24B7ACB7004EC405 /* StudyTableViewController+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67519B24B7ACB7004EC405 /* StudyTableViewController+CardinalKit.swift */; };
 		8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */; };
 		E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235077624F7082700CC1899 /* SceneDelegate.swift */; };
-		E290FB1D24FF4BBA00D19BE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E290FB1C24FF4BBA00D19BE9 /* GoogleService-Info.plist */; };
 		E29143FC24E74AD100EE97B2 /* OnboardingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29143FB24E74AD100EE97B2 /* OnboardingUI.swift */; };
 		E29143FE24E769F000EE97B2 /* StudiesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29143FD24E769F000EE97B2 /* StudiesUI.swift */; };
 		E2CB7FE524F730C80039C24A /* CKConfiguration-example.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CB7FE424F730C80039C24A /* CKConfiguration-example.plist */; };
@@ -69,6 +69,7 @@
 		607FACD01AFB9204008FA782 /* Viranos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viranos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AA5CD1C2188D392530510F /* CardinalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardinalKit.podspec; path = ../CardinalKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		77496A79250D7BC600DBF1E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardinalKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E0A437A244A4A0400656518 /* ProfileTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableItem.swift; sourceTree = "<group>"; };
 		8E0A437B244A4A0400656518 /* StaticProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticProfileViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
 		CB97C14C759E56B88E4E3941 /* Pods_CardinalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E235077624F7082700CC1899 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E290FB1C24FF4BBA00D19BE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E29143FB24E74AD100EE97B2 /* OnboardingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUI.swift; sourceTree = "<group>"; };
 		E29143FD24E769F000EE97B2 /* StudiesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesUI.swift; sourceTree = "<group>"; };
 		E2CB7FE424F730C80039C24A /* CKConfiguration-example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CKConfiguration-example.plist"; sourceTree = "<group>"; };
@@ -213,8 +213,8 @@
 				8E0A4384244A4A0400656518 /* Constants.swift */,
 				8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */,
 				8E0A43C9244A4C6500656518 /* Info.plist */,
-				E290FB1C24FF4BBA00D19BE9 /* GoogleService-Info.plist */,
 				E2F1FD7524D61EDA006C39DF /* CKPropertyReader.swift */,
+				77496A79250D7BC600DBF1E7 /* GoogleService-Info.plist */,
 				E2F1FD7724D62064006C39DF /* CKConfiguration.plist */,
 				E2CB7FE424F730C80039C24A /* CKConfiguration-example.plist */,
 			);
@@ -387,7 +387,7 @@
 				E2F1FD7824D62064006C39DF /* CKConfiguration.plist in Resources */,
 				8E0A43C1244A4A0400656518 /* LoginCustomWaitStepView.xib in Resources */,
 				E2CB7FE524F730C80039C24A /* CKConfiguration-example.plist in Resources */,
-				E290FB1D24FF4BBA00D19BE9 /* GoogleService-Info.plist in Resources */,
+				77496A7A250D7BC600DBF1E7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

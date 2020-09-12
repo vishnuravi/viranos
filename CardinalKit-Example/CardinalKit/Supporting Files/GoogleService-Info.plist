@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>267563013930-esrpvvdn6429pbd50qfpo2rgh1rgsl9e.apps.googleusercontent.com</string>
+	<string>55582690577-7q9i531bku9bjbnv1iuqk05ut8iman3t.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.267563013930-esrpvvdn6429pbd50qfpo2rgh1rgsl9e</string>
+	<string>com.googleusercontent.apps.55582690577-7q9i531bku9bjbnv1iuqk05ut8iman3t</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDZFphOPsibFOO40SdVJfRF-lVgH21riJk</string>
+	<string>AIzaSyDyYWXmVfPCLyVq1zQgnKGvm7nhk3wfUtY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>267563013930</string>
+	<string>55582690577</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>edu.stanford.cardinalkit</string>
+	<string>edu.stanford.viranos</string>
 	<key>PROJECT_ID</key>
-	<string>cs342-master-sample</string>
+	<string>viranos</string>
 	<key>STORAGE_BUCKET</key>
-	<string>cs342-master-sample.appspot.com</string>
+	<string>viranos.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:267563013930:ios:d1af91089e477416ccb053</string>
+	<string>1:55582690577:ios:88daeb1ae6a75c20e850b0</string>
 	<key>DATABASE_URL</key>
-	<string>https://cs342-master-sample.firebaseio.com</string>
+	<string>https://viranos.firebaseio.com</string>
 </dict>
 </plist>
