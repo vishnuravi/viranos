@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Study Title</key>
-	<string>CardinalKit Sample App</string>
+	<string>Viranos</string>
 	<key>Team Name</key>
 	<string>Stanford Department of Medicine</string>
 	<key>Email</key>
@@ -21,7 +21,7 @@
 	<key>Review Consent Step Text</key>
 	<string>Review Consent Form</string>
 	<key>Reason for Consent Text</key>
-	<string>Consent to join the Developer Health Research Study.</string>
+	<string>Consent to join the Viranos Research Study.</string>
 	<key>Consent File Name</key>
 	<string>My Consent Form</string>
 	<key>Passcode Text</key>
@@ -57,7 +57,7 @@
 	<key>Passcode On Return Text</key>
 	<string>Welcome back!</string>
 	<key>Consent Title</key>
-	<string>Research Health Study Consent Form</string>
+	<string>Viranos Study Consent Form</string>
 	<key>HealthKit Data to Read</key>
 	<array>
 		<string>StepCount</string>
