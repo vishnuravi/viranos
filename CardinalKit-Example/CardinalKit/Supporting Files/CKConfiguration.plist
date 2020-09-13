@@ -68,37 +68,140 @@
 	<key>Consent Form</key>
 	<dict>
 		<key>Overview</key>
-		<string>Welcome to CardinalKit. Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>Viranos is a platform developed to help COVID-19 patients monitor their health following diagnosis while also providing researchers and clinicians the tools to improve the understanding of long-term physical and psychosocial effects of the disease. 
+
+The app allows users to fill out periodic surveys to monitor the progression of their symptoms, complete various tasks to assess metrics such as short-term memory, and incorporates data from iPhone and Apple Watch sensors to create a multi-faceted, longitudinal view of a patient’s COVID-19 progression. 
+
+Get started by creating a profile and filling out the background questionnaire. Then, complete the COVID-19 questionnaire and Memory Task periodically to track changes over time. All of your data is easily viewable and accessible in the dashboard section of the app. 
+
+
+</string>
 		<key>Data Gathering</key>
-		<string>Your Data Gathering Section: Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>Viranos only collects information that you provide via in-app tasks and surveys. Examples of collected information include information that you share in your user profile, answers on symptom surveys, and results of memory task performance.</string>
 		<key>Privacy</key>
-		<string>Your Privacy Section: Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>Viranos respects the privacy of our users, and all information is kept private and completely stripped of information that could identify you before being shared with researchers. Phis Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “App”). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last Updated” date of this Privacy Policy. Any changes or modifications will be effective immediately upon posting the updated Privacy Policy on the App, and you waive the right to receive specific notice of each such change or modification.
+You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the App after the date such revised Privacy Policy is posted.
+This Privacy Policy was generated by Termly’s Privacy Policy Generator.
+COLLECTION OF YOUR INFORMATION
+We may collect information about you in a variety of ways. The information we may collect on the App includes:
+Personal Data
+Personally identifiable information, such as your name, shipping address, email address, and telephone number, and demographic information, such as your age, gender, hometown, and interests, that you voluntarily give to us when you register with the App. You are under no obligation to provide us with personal information of any kind, however your refusal to do so may prevent you from using certain features of the App.
+Derivative Data
+Information our servers automatically collect when you access the App, such as your IP address, your operating system, your access times, device name and type, your phone number, your country, your likes and replies to a post, and other interactions with the application and other users via server log files, as well as any other information you choose to provide.
+Financial Data
+We do not store any financial information. 
+Facebook Permissions
+The App may by default access your Facebook basic account information, including your name, email, gender, birthday, current city, and profile picture URL, as well as other information that you choose to make public. We may also request access to other permissions related to your account, such as friends, checkins, and likes, and you may choose to grant or deny us access to each individual permission. For more information regarding Facebook permissions, refer to the Facebook Permissions Reference page.
+Data From Social Networks
+User information from social networking sites, such as Facebook, Google+, Instagram, Pinterest, Twitter, including your name, your social network username, location, gender, birth date, email address, profile picture, and public data for contacts, if you connect your account to such social networks.This information may also include the contact information of anyone you invite to use and/or join our mobile application.
+Mobile Device Data
+Device information, such as your mobile device ID, model, and manufacturer, and information about the location of your device, if you access the App from a mobile device.
+Third-Party Data
+Information from third parties, such as personal information or network friends, if you connect your account to the third party and grant the App permission to access this information.
+Mobile Application Information
+When you connect using our mobile application:
+Geo-Location Information. We may request access or permission to and track location-based information from your mobile device, either continuously or while you are using our mobile application, to provide location-based services. If you wish to change our access or permissions, you may do so in your device’s settings.
+Mobile Device Access. We may request access or permission to certain features from your mobile device, including your mobile device’s bluetooth, calendar, camera, contacts, microphone, reminders, sensors, social media accounts, storage and other features. If you wish to change our access or permissions, you may do so in your device’s settings.
+Mobile Device Data. We may collect device information (such as your mobile device ID, model and manufacturer), operating system, version information and IP address.
+Push Notifications. We may request to send you push notifications regarding your account or the Application. If you wish to opt-out from receiving these types of communications, you may turn them off in your device’s settings.
+USE OF YOUR INFORMATION
+Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the App to:
+Compile anonymous statistical data and analysis for use internally or with third parties.
+Create and manage your account.
+Email you regarding your account.
+Enable user-to-user communications.
+Generate a personal profile about you to make future visits to the App more personalized.
+Increase the efficiency and operation of the App.
+Monitor and analyze usage and trends to improve your experience with the App.
+Notify you of updates to the App.
+Offer new products, services, mobile applications, and/or recommendations to you.
+Request feedback and contact you about your use of the App.
+Troubleshoot problems.
+Respond to product and customer service requests.
+Solicit support for the App.
+DISCLOSURE OF YOUR INFORMATION
+We may share information we have collected about you in certain situations. Your information may be disclosed as follows:
+By Law or to Protect Rights
+If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation. This includes exchanging information with other entities for fraud protection and credit risk reduction.
+Third-Party Service Providers
+We may share your information with third parties that perform services for us or on our behalf, including data analysis, email delivery, hosting services, customer service, and marketing assistance.
+Marketing Communications
+With your consent, or with an opportunity for you to withdraw consent, we may share your information with third parties for marketing purposes, as permitted by law.
+Interactions with Other Users
+If you interact with other users of the App, those users may see your username, profile photo, and descriptions of your activity, including sending invitations to other users, chatting with other users, liking posts, following blogs.
+Online Postings
+When you post comments, contributions or other content to the App, your posts may be viewed by all users and may be publicly distributed outside the App in perpetuity.
+Third-Party Advertisers
+We will not use your information for third-party advertisers or advertising. 
+Affiliates
+We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include our parent company and any subsidiaries, joint venture partners or other companies that we control or that are under common control with us.
+Business Partners
+We may share your information with our business partners to offer you certain products or services.
+If you connect to the App through a social network, your contacts on the social network may see your username, profile photo, and descriptions of your activity.
+Other Third Parties
+We may share your information with research partners for the purpose of conducting research analyses. We will only share data that is de-identified.
+Sale or Bankruptcy
+If we reorganize or sell all or a portion of our assets, undergo a merger, or are acquired by another entity, we may transfer your information to the successor entity. If we go out of business or enter bankruptcy, your information would be an asset transferred or acquired by a third party. You acknowledge that such transfers may occur and that the transferee may decline honor commitments we made in this Privacy Policy.
+We are not responsible for the actions of third parties with whom you share personal or sensitive data, and we have no authority to manage or control third-party solicitations. If you no longer wish to receive correspondence, emails or other communications from third parties, you are responsible for contacting the third party directly.
+TRACKING TECHNOLOGIES
+Mobile Analytics
+We may also partner with selected third-party vendors such as  Google Analytics and others, to allow tracking technologies for the purposes of research when on the App through the use of first party cookies and third-party cookies, to, among other things, analyze and track users’ use of the App, determine the popularity of certain content and better understand mobile activity. By accessing the App you consent to the collection and use of your information by these third-party vendors. You are encouraged to review their privacy policy and contact them directly for responses to your questions. We do not transfer personal information to these third-party vendors. However, if you do not want any information to be collected and used by tracking technologies, you can visit the third-party vendor or the Network Advertising Initiative Opt-Out Tool or Digital Advertising Alliance Opt-Out Tool.
+You should be aware that getting a new computer, installing a new browser, upgrading an existing browser, or erasing or otherwise altering your browser’s cookies files may also clear certain opt-out cookies, plug-ins, or settings.
+THIRD-PARTY WEBSITES
+The App may contain links to third-party websites and applications of interest, including informational resources and external services, that are not affiliated with us. Once you have used these links to leave the App, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information. Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information. We are not responsible for the content or privacy and security practices and policies of any third parties, including other sites, services or applications that may be linked to or from the App.
+SECURITY OF YOUR INFORMATION
+We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal information.
+POLICY FOR CHILDREN
+We do not knowingly solicit information from or market to children under the age of 18. If you become aware of any data we have collected from children under age 18, please contact us using the contact information provided below.
+CONTROLS FOR DO-NOT-TRACK FEATURES
+Some mobile operating systems include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy. 
+OPTIONS REGARDING YOUR INFORMATION
+[Account Information]
+You may at any time review or change the information in your account or terminate your account by:
+Logging into your account settings and updating your account
+Contacting us using the contact information provided below
+Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
+Emails and Communications
+If you no longer wish to receive correspondence, emails, or other communications from us, you may opt-out by:
+Noting your preferences at the time you register your account with the App [or our mobile application].
+Logging into your account settings and updating your preferences.
+Contacting us using the contact information provided below.
+If you no longer wish to receive correspondence, emails, or other communications from third parties, you are responsible for contacting the third party directly.
+CALIFORNIA PRIVACY RIGHTS
+California Civil Code Section 1798.83, also known as the “Shine The Light” law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+If you are under 18 years of age, reside in California, and have a registered account with the App [or our mobile application], you have the right to request removal of unwanted data that you publicly post on the App [or our mobile application]. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the App [or our mobile application], but please be aware that the data may not be completely or comprehensively removed from our systems.
+CONTACT US
+If you have questions or comments about this Privacy Policy, please contact us at:
+</string>
 		<key>Data Use</key>
-		<string>Your Data Use Section: Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>Viranos uses your data to provide you with personalized analytics relevant to your COVID-19 symptoms. We also use your data to share relevant resources and to connect you with other patients experiencing similar symptoms to your own. Viranos also partners with researchers and clinicians to provide information regarding the long-term effects of COVID-19 in order to better understand the disease and to improve its management.</string>
 		<key>Time Commitment</key>
-		<string>Your Time Commitment Section: Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>This study includes an initial survey that will take you less than 10 minutes to complete. After this, we will ask you to update your symptoms and health questionnaires monthly. Monthly surveys should take less than 10 minutes to complete. </string>
 		<key>Study Survey</key>
-		<string>Your Study Survey Section: Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>This survey will ask you to rate your current health status as well any current symptoms that you may be experiencing. This information will be used to help you monitor your health following COVID-19 infection, and will help researchers better understand the long-term physical and psychosocial effects of COVID-19. All of you data is carefully protected as outlined in our Privacy Policy. 
+
+Please contact your medical provider if you are experiencing worsening COVID-19 symptoms. </string>
 		<key>Study Tasks</key>
-		<string>Your Study Tasks Section: Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>The spatial memory activity assesses your short-term spatial memory by asking you to repeat the orders in which icons light up. There will be one practice round followed by a real round. </string>
 		<key>Withdrawing</key>
-		<string>Your Withdrawing Section: Vivamus laoreet erat sit amet tincidunt scelerisque. Maecenas odio sapien, molestie eu vulputate sodales, tincidunt at neque. Nunc venenatis velit et ligula dictum, eget accumsan felis consectetur. Donec scelerisque fermentum vestibulum. Nam molestie finibus mauris, id congue lectus ultrices eu. Nunc et odio vitae dui interdum dictum. Proin sagittis leo quam. Proin vulputate massa ac orci pulvinar, eget rhoncus urna congue. Sed ut vehicula tellus, eget scelerisque enim. Cras lobortis diam at faucibus scelerisque. Curabitur pharetra arcu erat, nec tincidunt mi eleifend ut. Nunc suscipit risus vitae consectetur sodales. Aenean vitae lectus odio. Phasellus diam orci, accumsan non elementum at, finibus condimentum mauris. Nullam est enim, rhoncus a rutrum sed, laoreet a magna.</string>
+		<string>You participation is voluntary, and you may withdraw at any time. You will be asked to complete a brief questionnaire if you choose to withdraw to deteremine your reason for withdrawing and to determine the appropriate data usage.</string>
 	</dict>
 	<key>Onboarding</key>
 	<array>
 		<dict>
 			<key>Title</key>
-			<string>First Title</string>
+			<string>Welcome to Viranos!</string>
 			<key>Description</key>
-			<string>Lorem Ipsum is simply dummy text of the printing and typesetting industry</string>
+			<string>A platform for symptom tracking and resources to better understand the long implications of COVID-19</string>
 			<key>Logo</key>
-			<string>😁</string>
+			<string>🦠</string>
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>Second Title</string>
+			<string>Click below to learn more</string>
 			<key>Description</key>
-			<string>Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+			<string>A platform for symptom tracking and resources to better understand the long implications of COVID-19</string>
 			<key>Logo</key>
 			<string>🦠</string>
 		</dict>
