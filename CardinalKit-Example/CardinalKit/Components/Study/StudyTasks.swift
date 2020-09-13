@@ -19,7 +19,7 @@ struct StudyTasks {
     static let memoryTask: ORKOrderedTask = {
         let intendedUseDescription = "Test your spatial memory."
         
-        return ORKOrderedTask.spatialSpanMemoryTask(withIdentifier: "MemoryTask", intendedUseDescription: "Tests your spatial memory", initialSpan: 5, minimumSpan: 5, maximumSpan: 10, playSpeed: 3, maximumTests: 1, maximumConsecutiveFailures: 3, customTargetImage: UIImage(systemName: "seal.fill"), customTargetPluralName: "flowers", requireReversal: false, options: ORKPredefinedTaskOption())
+        return ORKOrderedTask.spatialSpanMemoryTask(withIdentifier: "MemoryTask", intendedUseDescription: "Tests your spatial memory", initialSpan: 5, minimumSpan: 5, maximumSpan: 10, playSpeed: 3, maximumTests: 1, maximumConsecutiveFailures: 3, customTargetImage: UIImage(named: "virus"), customTargetPluralName: "viruses", requireReversal: false, options: ORKPredefinedTaskOption())
         
     }()
     

@@ -55,7 +55,7 @@ enum StudyTableItem: Int {
     var image: UIImage? {
         switch self {
         case .survey:
-            return UIImage(systemName: "square.and.pencil")
+            return UIImage(named: "virus")
         default:
             return UIImage(systemName: "memories")
         }
