@@ -30,7 +30,11 @@ struct MemeView: View {
     var body: some View {
         VStack {
             Text("Badges You've Earned").font(.title)
-            Image("taylor_hero_badge")
+                .padding(.bottom, 10)
+            Image("hercules_meme")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+                .padding(.bottom, 10)
             Text("Keep doing activities daily to unlock more badges and rewards!").font(.caption)
         }
     }
