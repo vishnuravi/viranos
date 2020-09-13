@@ -28,12 +28,7 @@ struct StudiesUI: View {
                     Image("tab_activities").renderingMode(.template)
                     Text("Activities")
             }
-
-            ProfileView(color: self.color)
-                .tabItem {
-                    Image("tab_profile").renderingMode(.template)
-                    Text("Profile")
-                }
+            
             DashboardView()
                 .tabItem {
                     Image(systemName: "gauge").renderingMode(.template)
@@ -43,6 +38,11 @@ struct StudiesUI: View {
                 .tabItem {
                     Image(systemName: "link.circle.fill").renderingMode(.template)
                     Text("Resources")
+            }
+            ProfileView(color: self.color)
+                .tabItem {
+                    Image("tab_profile").renderingMode(.template)
+                    Text("Profile")
             }
         }.accentColor(self.color)
     }
@@ -87,7 +87,7 @@ struct ActivitiesView: View {
     var body: some View {
         VStack {
             Image("logo").frame(width: 200)
-//            Text(config.read(query: "Study Title")).font(.system(size: 25, weight:.bold)).foregroundColor(self.color)
+            //            Text(config.read(query: "Study Title")).font(.system(size: 25, weight:.bold)).foregroundColor(self.color)
             //Text(config.read(query: "Team Name")).font(.system(size: 15, weight:.light))
             Text(self.date).font(.system(size: 18, weight: .regular)).padding()
             List {
@@ -125,13 +125,13 @@ struct ActivityView: View {
                 Text(self.description).font(.system(size: 14, weight: .light, design: .default))
             }
             Spacer()
-            }.frame(height: 65).contentShape(Rectangle()).gesture(TapGesture().onEnded({
-                self.showingDetail.toggle()
-            })).sheet(isPresented: $showingDetail, onDismiss: {
-                
-            }, content: {
-                TaskVC(tasks: self.tasks)
-            })
+        }.frame(height: 65).contentShape(Rectangle()).gesture(TapGesture().onEnded({
+            self.showingDetail.toggle()
+        })).sheet(isPresented: $showingDetail, onDismiss: {
+            
+        }, content: {
+            TaskVC(tasks: self.tasks)
+        })
     }
 }
 
@@ -153,7 +153,7 @@ struct WithdrawView: View {
         }.frame(height: 60)
             .contentShape(Rectangle())
             .gesture(TapGesture().onEnded({
-            self.showWithdraw.toggle()
+                self.showWithdraw.toggle()
             })).sheet(isPresented: $showWithdraw, onDismiss: {
                 
             }, content: {
@@ -178,8 +178,8 @@ struct ReportView: View {
             Text(self.email).foregroundColor(self.color)
         }.frame(height: 60).contentShape(Rectangle())
             .gesture(TapGesture().onEnded({
-            EmailHelper.shared.sendEmail(subject: "App Support Request", body: "Enter your support request here.", to: self.email)
-        }))
+                EmailHelper.shared.sendEmail(subject: "App Support Request", body: "Enter your support request here.", to: self.email)
+            }))
     }
 }
 
@@ -199,11 +199,11 @@ struct SupportView: View {
             Text(self.phone).foregroundColor(self.color)
         }.frame(height: 60).contentShape(Rectangle())
             .gesture(TapGesture().onEnded({
-            let telephone = "tel://"
+                let telephone = "tel://"
                 let formattedString = telephone + self.phone
-            guard let url = URL(string: formattedString) else { return }
-            UIApplication.shared.open(url)
-        }))
+                guard let url = URL(string: formattedString) else { return }
+                UIApplication.shared.open(url)
+            }))
     }
 }
 
@@ -226,7 +226,7 @@ struct DocumentView: View {
             .gesture(TapGesture().onEnded({
                 self.showPreview = true
                 
-        })).background(DocumentPreview(self.$showPreview, url: self.documentsURL))
+            })).background(DocumentPreview(self.$showPreview, url: self.documentsURL))
     }
 }
 
@@ -245,9 +245,9 @@ struct HelpView: View {
         }.frame(height: 70).contentShape(Rectangle())
             .gesture(TapGesture().onEnded({
                 if let url = URL(string: self.site) {
-                UIApplication.shared.open(url)
-            }
-        }))
+                    UIApplication.shared.open(url)
+                }
+            }))
     }
 }
 
@@ -264,11 +264,11 @@ struct ChangePasscodeView: View {
                 if ORKPasscodeViewController.isPasscodeStoredInKeychain() {
                     self.showPasscode.toggle()
                 }
-        })).sheet(isPresented: $showPasscode, onDismiss: {
-            
-        }, content: {
-            PasscodeVC()
-        })
+            })).sheet(isPresented: $showPasscode, onDismiss: {
+                
+            }, content: {
+                PasscodeVC()
+            })
     }
 }
 
@@ -277,8 +277,8 @@ struct PatientIDView: View {
     
     init() {
         if let currentUser = CKStudyUser.shared.currentUser {
-           self.userID = currentUser.uid
-       }
+            self.userID = currentUser.uid
+        }
     }
     
     var body: some View {
@@ -353,7 +353,7 @@ public extension UIColor {
 
 class EmailHelper: NSObject, MFMailComposeViewControllerDelegate {
     public static let shared = EmailHelper()
-
+    
     func sendEmail(subject:String, body:String, to:String){
         if !MFMailComposeViewController.canSendMail() {
             return
@@ -382,27 +382,27 @@ struct DocumentPreview: UIViewControllerRepresentable {
     private var isActive: Binding<Bool>
     private let viewController = UIViewController()
     private let docController: UIDocumentInteractionController
-
+    
     init(_ isActive: Binding<Bool>, url: URL) {
         self.isActive = isActive
         self.docController = UIDocumentInteractionController(url: url)
     }
-
+    
     func makeUIViewController(context: UIViewControllerRepresentableContext<DocumentPreview>) -> UIViewController {
         return viewController
     }
-
+    
     func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<DocumentPreview>) {
         if self.isActive.wrappedValue && docController.delegate == nil { // to not show twice
             docController.delegate = context.coordinator
             self.docController.presentPreview(animated: true)
         }
     }
-
+    
     func makeCoordinator() -> Coordintor {
         return Coordintor(owner: self)
     }
-
+    
     final class Coordintor: NSObject, UIDocumentInteractionControllerDelegate { // works as delegate
         let owner: DocumentPreview
         init(owner: DocumentPreview) {
@@ -411,7 +411,7 @@ struct DocumentPreview: UIViewControllerRepresentable {
         func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
             return owner.viewController
         }
-
+        
         func documentInteractionControllerDidEndPreview(_ controller: UIDocumentInteractionController) {
             controller.delegate = nil // done, so unlink self
             owner.isActive.wrappedValue = false // notify external about done
@@ -427,12 +427,12 @@ struct PasscodeVC: UIViewControllerRepresentable {
     func makeCoordinator() -> Coordinator {
         Coordinator()
     }
-
-
+    
+    
     typealias UIViewControllerType = ORKPasscodeViewController
-
+    
     func makeUIViewController(context: Context) -> ORKPasscodeViewController {
-
+        
         let config = CKPropertyReader(file: "CKConfiguration")
         
         let num = config.read(query: "Passcode Type")
@@ -448,11 +448,11 @@ struct PasscodeVC: UIViewControllerRepresentable {
         }
         
     }
-
+    
     func updateUIViewController(_ taskViewController: ORKTaskViewController, context: Context) {
-
-        }
-
+        
+    }
+    
     class Coordinator: NSObject, ORKPasscodeDelegate {
         func passcodeViewControllerDidFinish(withSuccess viewController: UIViewController) {
             viewController.dismiss(animated: true, completion: nil)
@@ -462,7 +462,7 @@ struct PasscodeVC: UIViewControllerRepresentable {
             viewController.dismiss(animated: true, completion: nil)
         }
         
-
+        
     }
     
 }
@@ -478,10 +478,10 @@ struct TaskVC: UIViewControllerRepresentable {
     func makeCoordinator() -> Coordinator {
         Coordinator()
     }
-
-
+    
+    
     typealias UIViewControllerType = ORKTaskViewController
-
+    
     func makeUIViewController(context: Context) -> ORKTaskViewController {
         
         if vc.outputDirectory == nil {
@@ -492,18 +492,18 @@ struct TaskVC: UIViewControllerRepresentable {
         
         // & present the VC!
         return self.vc
-
+        
     }
-
+    
     func updateUIViewController(_ taskViewController: ORKTaskViewController, context: Context) {
-
-        }
-
+        
+    }
+    
     class Coordinator: NSObject, ORKTaskViewControllerDelegate {
         public func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
             switch reason {
             case .completed:
-               do {
+                do {
                     // (1) convert the result of the ResearchKit task into a JSON dictionary
                     if let json = try CKTaskResultAsJson(taskViewController.result) {
                         
@@ -526,11 +526,11 @@ struct TaskVC: UIViewControllerRepresentable {
         }
         
         /**
-        Create an output directory for a given task.
-        You may move this directory.
+         Create an output directory for a given task.
+         You may move this directory.
          
          - Returns: URL with directory location
-        */
+         */
         func CKGetTaskOutputDirectory(_ taskViewController: ORKTaskViewController) -> URL? {
             do {
                 let defaultFileManager = FileManager.default
@@ -554,11 +554,11 @@ struct TaskVC: UIViewControllerRepresentable {
         /**
          Parse a result from a ResearchKit task and convert to a dictionary.
          JSON-friendly.
-
+         
          - Parameters:
-            - result: original `ORKTaskResult`
+         - result: original `ORKTaskResult`
          - Returns: [String:Any] dictionary with ResearchKit `ORKTaskResult`
-        */
+         */
         func CKTaskResultAsJson(_ result: ORKTaskResult) throws -> [String:Any]? {
             let jsonData = try ORKESerializer.jsonData(for: result)
             return try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String : Any]
@@ -566,7 +566,7 @@ struct TaskVC: UIViewControllerRepresentable {
         
         /**
          Given a JSON dictionary, use the Firebase SDK to store it in Firestore.
-        */
+         */
         func CKSendJSON(_ json: [String:Any]) throws {
             
             if  let identifier = json["identifier"] as? String,
@@ -597,7 +597,7 @@ struct TaskVC: UIViewControllerRepresentable {
         
         /**
          Given a file, use the Firebase SDK to store it in Google Storage.
-        */
+         */
         func CKSendFiles(_ files: URL, result: [String:Any]) throws {
             if  let identifier = result["identifier"] as? String,
                 let taskUUID = result["taskRunUUID"] as? String,
@@ -632,33 +632,33 @@ struct TaskVC: UIViewControllerRepresentable {
                     uploadTask.observe(.failure) { snapshot in
                         print("Error uploading file!")
                         /*if let error = snapshot.error as NSError? {
-                            switch (StorageErrorCode(rawValue: error.code)!) {
-                            case .objectNotFound:
-                                // File doesn't exist
-                                break
-                            case .unauthorized:
-                                // User doesn't have permission to access file
-                                break
-                            case .cancelled:
-                                // User canceled the upload
-                                break
-                                
-                                /* ... */
-                                
-                            case .unknown:
-                                // Unknown error occurred, inspect the server response
-                                break
-                            default:
-                                // A separate error occurred. This is a good place to retry the upload.
-                                break
-                            }
-                        }*/
+                         switch (StorageErrorCode(rawValue: error.code)!) {
+                         case .objectNotFound:
+                         // File doesn't exist
+                         break
+                         case .unauthorized:
+                         // User doesn't have permission to access file
+                         break
+                         case .cancelled:
+                         // User canceled the upload
+                         break
+                         
+                         /* ... */
+                         
+                         case .unknown:
+                         // Unknown error occurred, inspect the server response
+                         break
+                         default:
+                         // A separate error occurred. This is a good place to retry the upload.
+                         break
+                         }
+                         }*/
                     }
                     
                 }
             }
         }
-
+        
     }
     
 }
@@ -668,12 +668,12 @@ struct WithdrawalVC: UIViewControllerRepresentable {
     func makeCoordinator() -> Coordinator {
         Coordinator()
     }
-
-
+    
+    
     typealias UIViewControllerType = ORKTaskViewController
-
+    
     func makeUIViewController(context: Context) -> ORKTaskViewController {
-
+        
         let config = CKPropertyReader(file: "CKConfiguration")
         
         let instructionStep = ORKInstructionStep(identifier: "WithdrawlInstruction")
@@ -693,13 +693,13 @@ struct WithdrawalVC: UIViewControllerRepresentable {
         
         // & present the VC!
         return taskViewController
-
+        
     }
-
+    
     func updateUIViewController(_ taskViewController: ORKTaskViewController, context: Context) {
-
-        }
-
+        
+    }
+    
     class Coordinator: NSObject, ORKTaskViewControllerDelegate {
         public func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
             switch reason {
