@@ -34,6 +34,16 @@ struct StudiesUI: View {
                     Image("tab_profile").renderingMode(.template)
                     Text("Profile")
                 }
+            DashboardView()
+                .tabItem {
+                    Image(systemName: "gauge").renderingMode(.template)
+                    Text("Dashboard")
+            }
+            ResourcesView()
+                .tabItem {
+                    Image(systemName: "link.circle.fill").renderingMode(.template)
+                    Text("Resources")
+            }
         }.accentColor(self.color)
     }
 }

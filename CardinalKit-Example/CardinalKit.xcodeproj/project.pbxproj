@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		77496A7A250D7BC600DBF1E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77496A79250D7BC600DBF1E7 /* GoogleService-Info.plist */; };
+		77DF01EF250DBCB700209541 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF01EE250DBCB700209541 /* ResourcesView.swift */; };
+		77DF01F1250DC95C00209541 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF01F0250DC95C00209541 /* DashboardView.swift */; };
 		8E0A43A7244A4A0400656518 /* ProfileTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437A244A4A0400656518 /* ProfileTableItem.swift */; };
 		8E0A43A8244A4A0400656518 /* StaticProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437B244A4A0400656518 /* StaticProfileViewController.swift */; };
 		8E0A43AA244A4A0400656518 /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437F244A4A0400656518 /* WithdrawalViewController.swift */; };
@@ -70,6 +72,8 @@
 		62AA5CD1C2188D392530510F /* CardinalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardinalKit.podspec; path = ../CardinalKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		77496A79250D7BC600DBF1E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77DF01EE250DBCB700209541 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		77DF01F0250DC95C00209541 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardinalKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E0A437A244A4A0400656518 /* ProfileTableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableItem.swift; sourceTree = "<group>"; };
 		8E0A437B244A4A0400656518 /* StaticProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticProfileViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +317,8 @@
 			children = (
 				E29143FB24E74AD100EE97B2 /* OnboardingUI.swift */,
 				E29143FD24E769F000EE97B2 /* StudiesUI.swift */,
+				77DF01EE250DBCB700209541 /* ResourcesView.swift */,
+				77DF01F0250DC95C00209541 /* DashboardView.swift */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -499,6 +505,8 @@
 				E2F1FD7624D61EDA006C39DF /* CKPropertyReader.swift in Sources */,
 				E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */,
 				8E67519C24B7ACB7004EC405 /* StudyTableViewController+CardinalKit.swift in Sources */,
+				77DF01EF250DBCB700209541 /* ResourcesView.swift in Sources */,
+				77DF01F1250DC95C00209541 /* DashboardView.swift in Sources */,
 				8E0A43AA244A4A0400656518 /* WithdrawalViewController.swift in Sources */,
 				8E0A43BA244A4A0400656518 /* LaunchContainerViewController.swift in Sources */,
 				8E0A43C2244A4A0400656518 /* ConsentDocument.swift in Sources */,
