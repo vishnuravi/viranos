@@ -23,20 +23,25 @@ enum StudyTableItem: Int {
     }
 
     // table items
-    case survey, activeTask
+    case survey, survey2, activeTask
 
     var task: ORKOrderedTask {
         switch self {
         case .survey:
+            return StudyTasks.backgroundTask
+        case .survey2:
             return StudyTasks.sf12Task
         case .activeTask:
             return StudyTasks.memoryTask
         }
+        
     }
 
     var title: String {
         switch self {
         case .survey:
+            return "Background Questionnaire"
+        case .survey2:
             return "COVID-19 Questionnaire"
         case .activeTask:
             return "Memory Task"
@@ -46,9 +51,11 @@ enum StudyTableItem: Int {
     var subtitle: String {
         switch self {
         case .survey:
-            return "Reports symptoms and functioning"
+                return "Answer a few questions about yourself (one time only)"
+        case .survey2:
+            return "Report your symptoms and functioning"
         case .activeTask:
-            return "Complete a brief task"
+            return "Complete a brief task to assess your spatial memory"
         }
     }
 
@@ -56,6 +63,8 @@ enum StudyTableItem: Int {
         switch self {
         case .survey:
             return UIImage(named: "virus")
+        case .survey2:
+            return UIImage(systemName: "square.and.pencil")
         default:
             return UIImage(systemName: "memories")
         }
