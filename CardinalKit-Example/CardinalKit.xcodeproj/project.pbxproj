@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772C79DB250E61610013F43E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 772C79DA250E61610013F43E /* SwiftUICharts */; };
 		77496A7A250D7BC600DBF1E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77496A79250D7BC600DBF1E7 /* GoogleService-Info.plist */; };
 		77DF01EF250DBCB700209541 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF01EE250DBCB700209541 /* ResourcesView.swift */; };
 		77DF01F1250DC95C00209541 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF01F0250DC95C00209541 /* DashboardView.swift */; };
@@ -121,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772C79DB250E61610013F43E /* SwiftUICharts in Frameworks */,
 				8E0A43CE244A60D800656518 /* Pods_CardinalKit_Example.framework in Frameworks */,
 				8E0A43D5244A693D00656518 /* HealthKit.framework in Frameworks */,
 			);
@@ -342,6 +344,9 @@
 			dependencies = (
 			);
 			name = CardinalKit_Example;
+			packageProductDependencies = (
+				772C79DA250E61610013F43E /* SwiftUICharts */,
+			);
 			productName = CardinalKit;
 			productReference = 607FACD01AFB9204008FA782 /* Viranos.app */;
 			productType = "com.apple.product-type.application";
@@ -373,6 +378,9 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				772C79D9250E61610013F43E /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -629,7 +637,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -645,7 +654,10 @@
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.viranos;
 				PRODUCT_NAME = Viranos;
@@ -667,7 +679,10 @@
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.viranos;
 				PRODUCT_NAME = Viranos;
@@ -699,6 +714,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		772C79D9250E61610013F43E /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		772C79DA250E61610013F43E /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 772C79D9250E61610013F43E /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ResourcesView: View {
     var body: some View {
-        Text("Resources")
+        VStack {
+            Text("Resources").font(.system(size: 25, weight:.bold))
+            ScrollView {
+                Text("Resources")
+            }
+        }
     }
 }
 

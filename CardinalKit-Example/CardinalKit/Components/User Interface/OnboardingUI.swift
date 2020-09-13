@@ -43,11 +43,14 @@ struct OnboardingUI: View {
                 StudiesUI()
             } else {
                 Spacer()
-                Text(config.read(query: "Team Name")).padding(.leading, 20).padding(.trailing, 20)
-                Text(config.read(query: "Study Title"))
-                 .foregroundColor(self.color)
-                 .font(.system(size: 35, weight: .bold, design: .default)).padding(.leading, 20).padding(.trailing, 20)
+                HStack {
+                    Image("logo").frame(width: 200)
+//                Text(config.read(query: "Team Name")).padding(.leading, 20).padding(.trailing, 20)
+//                Text(config.read(query: "Study Title"))
+//                 .foregroundColor(self.color)
+//                 .font(.system(size: 35, weight: .bold, design: .default)).padding(.leading, 20).padding(.trailing, 20)
 
+                }
                 Spacer()
 
                 PageView(self.onboardingElements.map { infoView(logo: $0.logo, title: $0.title, description: $0.description, color: self.color) })
