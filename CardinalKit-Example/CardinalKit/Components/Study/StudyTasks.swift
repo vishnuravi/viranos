@@ -118,9 +118,9 @@ struct StudyTasks {
         
         
         //SUMARY
-        let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
-        summaryStep.title = "Thank you."
-        summaryStep.text = "We appreciate your time."
+        let summaryStep = ORKInstructionStep(identifier: "SummaryStep")
+        summaryStep.title = "Thank you!"
+        summaryStep.image = UIImage(named: "taylor")
         
         steps += [summaryStep]
         
