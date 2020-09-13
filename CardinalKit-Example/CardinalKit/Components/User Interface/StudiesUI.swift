@@ -86,8 +86,9 @@ struct ActivitiesView: View {
     
     var body: some View {
         VStack {
-            Text(config.read(query: "Study Title")).font(.system(size: 25, weight:.bold)).foregroundColor(self.color)
-            Text(config.read(query: "Team Name")).font(.system(size: 15, weight:.light))
+            Image("logo")
+//            Text(config.read(query: "Study Title")).font(.system(size: 25, weight:.bold)).foregroundColor(self.color)
+            //Text(config.read(query: "Team Name")).font(.system(size: 15, weight:.light))
             Text(self.date).font(.system(size: 18, weight: .regular)).padding()
             List {
                 Section(header: Text("Current Activities")) {

@@ -43,7 +43,6 @@ struct OnboardingUI: View {
                 StudiesUI()
             } else {
                 Spacer()
-
                 Text(config.read(query: "Team Name")).padding(.leading, 20).padding(.trailing, 20)
                 Text(config.read(query: "Study Title"))
                  .foregroundColor(self.color)
