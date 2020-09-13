@@ -23,8 +23,6 @@ struct StudyTasks {
         
     }()
     
-   
-    
     /**
      Sample task created step-by-step!
     */
@@ -127,6 +125,24 @@ struct StudyTasks {
         steps += [summaryStep]
         
         return ORKOrderedTask(identifier: "SurveyTask-SF12", steps: steps)
+       
     }()
-}
+    
+    static let backgroundTask: ORKOrderedTask = {
+        var steps = [ORKStep]()
+        
+        // Instruction step
+        let instructionStep = ORKInstructionStep(identifier: "BackgroundTask")
+        instructionStep.title = "Background Questionnaire"
+        instructionStep.text = "This information will be used to assess the long term physical and psychosocial outcomes of COVID-19. Please contact your medical provider for worsening symptoms."
+        
+        steps += [instructionStep]
+        
+  
+    
+     return ORKOrderedTask(identifier: "Background Task", steps: steps)
+    
+      }()
+
+        }
 
