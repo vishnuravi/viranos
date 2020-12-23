@@ -23,8 +23,19 @@ struct MainUIView: View {
                 .tabItem {
                     Image("tab_activities").renderingMode(.template)
                     Text("Activities")
+            
+                }
+            
+            DashboardView()
+                .tabItem {
+                    Image(systemName: "gauge").renderingMode(.template)
+                    Text("Dashboard")
             }
-
+            ResourcesView()
+                .tabItem {
+                    Image(systemName: "link.circle.fill").renderingMode(.template)
+                    Text("Resources")
+            }
             ProfileUIView(color: self.color)
                 .tabItem {
                     Image("tab_profile").renderingMode(.template)
