@@ -23,38 +23,39 @@ enum StudyTableItem: Int {
     }
 
     // table items
-    case survey, activeTask
+    case survey, survey2
 
     var task: ORKOrderedTask {
         switch self {
         case .survey:
+            return StudyTasks.backgroundTask
+        case .survey2:
             return StudyTasks.sf12Task
-        case .activeTask:
-            return StudyTasks.walkingTask
+            
         }
     }
 
     var title: String {
         switch self {
         case .survey:
-            return "Survey Sample"
-        case .activeTask:
-            return "Active Task Sample"
+            return "Background Questionnaire"
+        case .survey2:
+            return "Symptom Questionnaire"
         }
     }
 
     var subtitle: String {
         switch self {
         case .survey:
-            return "Answer some short questions."
-        case .activeTask:
-            return "Perform an action."
+            return "One-time demographic questionnaire"
+        case .survey2:
+            return "Weekly symptom reporting"
         }
     }
 
     var image: UIImage? {
         switch self {
-        case .activeTask:
+        case .survey:
             return UIImage(named: "ActivityIcon")
         default:
             return UIImage(named: "SurveyIcon")
