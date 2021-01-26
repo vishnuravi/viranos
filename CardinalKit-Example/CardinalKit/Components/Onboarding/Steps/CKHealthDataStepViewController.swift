@@ -21,12 +21,6 @@ class CKHealthDataStep: ORKInstructionStep {
         
         let config = CKConfig.shared
         
-        for requestedHKType in config.readArray(query: "HealthKit Data to Read") {
-            let id = HKQuantityTypeIdentifier(rawValue: "HKQuantityTypeIdentifier" + requestedHKType)
-            let hkType = HKQuantityType.quantityType(forIdentifier: id)
-            hkTypesToReadInBackground.insert(hkType!)
-        }
-        
         title = NSLocalizedString(config.read(query: "Health Permissions Title"), comment: "")
         text = NSLocalizedString(config.read(query: "Health Permissions Text"), comment: "")
     }
