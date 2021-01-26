@@ -3,7 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-<<<<<<< HEAD
 	<string>1055666817370-vp9pc5h672riptctphmactt84bbkl1cs.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
 	<string>com.googleusercontent.apps.1055666817370-vp9pc5h672riptctphmactt84bbkl1cs</string>
@@ -19,23 +18,6 @@
 	<string>covid-19-297501</string>
 	<key>STORAGE_BUCKET</key>
 	<string>covid-19-297501.appspot.com</string>
-=======
-	<string>267563013930-esrpvvdn6429pbd50qfpo2rgh1rgsl9e.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.267563013930-esrpvvdn6429pbd50qfpo2rgh1rgsl9e</string>
-	<key>API_KEY</key>
-	<string>AIzaSyDZFphOPsibFOO40SdVJfRF-lVgH21riJk</string>
-	<key>GCM_SENDER_ID</key>
-	<string>267563013930</string>
-	<key>PLIST_VERSION</key>
-	<string>1</string>
-	<key>BUNDLE_ID</key>
-	<string>edu.stanford.cardinalkit</string>
-	<key>PROJECT_ID</key>
-	<string>cs342-master-sample</string>
-	<key>STORAGE_BUCKET</key>
-	<string>cs342-master-sample.appspot.com</string>
->>>>>>> upstream/main
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -47,14 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-<<<<<<< HEAD
 	<string>1:1055666817370:ios:64947095d64db8bdc3cb63</string>
 	<key>DATABASE_URL</key>
 	<string>https://covid-19-297501-default-rtdb.firebaseio.com</string>
-=======
-	<string>1:267563013930:ios:d1af91089e477416ccb053</string>
-	<key>DATABASE_URL</key>
-	<string>https://cs342-master-sample.firebaseio.com</string>
->>>>>>> upstream/main
 </dict>
 </plist>
