@@ -16,11 +16,13 @@ enum TaskItem: Int {
      * STEP (1) APPEND TABLE ITEMS HERE,
      * Give each item a recognizable name!
      */
-    case sampleResearchKitSurvey,
-         sampleResearchKitActiveTask,
+    case //sampleResearchKitSurvey,
+         //sampleResearchKitActiveTask,
          sampleCoreMotionAppleWatch,
          // sampleFunCoffeeSurvey,
-         sampleLearnItem
+         sampleLearnItem,
+         backgroundSurvey,
+         survey
     
     /*
      * STEP (2) for each item, what should its
@@ -28,10 +30,10 @@ enum TaskItem: Int {
      */
     var title: String {
         switch self {
-        case .sampleResearchKitSurvey:
-            return "Survey (ResearchKit)"
-        case .sampleResearchKitActiveTask:
-            return "Active Task (ResearchKit)"
+        case .backgroundSurvey:
+            return "Background Questionnaire"
+        case .survey:
+            return "Symptom Questionnaire"
         case .sampleCoreMotionAppleWatch:
             return "Sensors Demo"
 //        case .sampleFunCoffeeSurvey:
@@ -46,10 +48,10 @@ enum TaskItem: Int {
      */
     var subtitle: String {
         switch self {
-        case .sampleResearchKitSurvey:
-            return "Sample questions and forms."
-        case .sampleResearchKitActiveTask:
-            return "Sample sensor/data collection activities."
+        case .backgroundSurvey:
+            return "One-time demographic questionnaire"
+        case .survey:
+            return "Weekly symptom reporting"
         case .sampleCoreMotionAppleWatch:
             return "CoreMotion & Cloud Storage"
 //        case .sampleFunCoffeeSurvey:
@@ -66,7 +68,7 @@ enum TaskItem: Int {
      */
     var image: UIImage? {
         switch self {
-        case .sampleResearchKitActiveTask:
+        case .backgroundSurvey:
             return getImage(named: "ActivityIcon")
 //        case .sampleFunCoffeeSurvey:
 //            return getImage(named: "CoffeeIcon")
@@ -84,7 +86,7 @@ enum TaskItem: Int {
      */
     var section: String {
         switch self {
-        case .sampleResearchKitSurvey, .sampleResearchKitActiveTask, .sampleCoreMotionAppleWatch:
+        case .backgroundSurvey, .survey, .sampleCoreMotionAppleWatch:
             return "Current Tasks"
 //        case .sampleFunCoffeeSurvey:
 //            return "Your Interests"
@@ -99,10 +101,10 @@ enum TaskItem: Int {
      */
     var action: some View {
         switch self {
-        case .sampleResearchKitSurvey:
-            return AnyView(CKTaskViewController(tasks: TaskSamples.sampleSurveyTask))
-        case .sampleResearchKitActiveTask:
-            return AnyView(CKTaskViewController(tasks: TaskSamples.sampleWalkingTask))
+        case .backgroundSurvey:
+            return AnyView(CKTaskViewController(tasks: StudyTasks.backgroundTask))
+        case .survey:
+            return AnyView(CKTaskViewController(tasks: StudyTasks.sf12Task))
         case .sampleCoreMotionAppleWatch:
             return AnyView(SensorsDemoUIView())
 //        case .sampleFunCoffeeSurvey:
