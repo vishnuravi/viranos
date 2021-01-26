@@ -20,7 +20,7 @@ enum TaskItem: Int {
          //sampleResearchKitActiveTask,
          //sampleCoreMotionAppleWatch,
          // sampleFunCoffeeSurvey,
-         sampleLearnItem,
+         resources,
          backgroundSurvey,
          survey
     
@@ -38,8 +38,8 @@ enum TaskItem: Int {
            // return "Sensors Demo"
 //        case .sampleFunCoffeeSurvey:
 //            return "Coffee Survey"
-        case .sampleLearnItem:
-            return "About CardinalKit"
+        case .resources:
+            return "Patient Resources"
         }
     }
     
@@ -56,8 +56,8 @@ enum TaskItem: Int {
          //   return "CoreMotion & Cloud Storage"
 //        case .sampleFunCoffeeSurvey:
 //            return "How do you like your coffee?"
-        case .sampleLearnItem:
-            return "Visit cardinalkit.org"
+        case .resources:
+            return "Support for patients"
         }
     }
     
@@ -74,7 +74,7 @@ enum TaskItem: Int {
 //            return getImage(named: "CoffeeIcon")
        // case .sampleCoreMotionAppleWatch:
          //   return getImage(named: "WatchIcon")
-        case .sampleLearnItem:
+        case .resources:
             return getImage(named: "CKLogoIcon")
         default:
             return getImage(named: "SurveyIcon")
@@ -90,7 +90,7 @@ enum TaskItem: Int {
             return "Current Tasks"
 //        case .sampleFunCoffeeSurvey:
 //            return "Your Interests"
-        case .sampleLearnItem:
+        case .resources:
             return "Learn"
         }
     }
@@ -109,8 +109,8 @@ enum TaskItem: Int {
           //  return AnyView(SensorsDemoUIView())
 //        case .sampleFunCoffeeSurvey:
 //            return AnyView(CKTaskViewController(tasks: TaskSamples.sampleCoffeeTask))
-        case .sampleLearnItem:
-            return AnyView(LearnUIView())
+        case .resources:
+            return AnyView(ResourcesView())
         }
     }
     
