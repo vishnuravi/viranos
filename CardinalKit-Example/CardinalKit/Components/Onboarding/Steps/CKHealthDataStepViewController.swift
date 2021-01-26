@@ -11,9 +11,12 @@ import CardinalKit
 
 class CKHealthDataStep: ORKInstructionStep {
     
+<<<<<<< HEAD
     // TODO: save as configurable element
     var hkTypesToReadInBackground: Set<HKQuantityType> = []
 
+=======
+>>>>>>> upstream/main
     override init(identifier: String) {
         super.init(identifier: identifier)
         
@@ -22,7 +25,7 @@ class CKHealthDataStep: ORKInstructionStep {
          * requesting health data permissions.
         **************************************************************/
         
-        let config = CKPropertyReader(file: "CKConfiguration")
+        let config = CKConfig.shared
         
         for requestedHKType in config.readArray(query: "HealthKit Data to Read") {
             let id = HKQuantityTypeIdentifier(rawValue: "HKQuantityTypeIdentifier" + requestedHKType)
@@ -38,37 +41,6 @@ class CKHealthDataStep: ORKInstructionStep {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Convenience
-    func getHealthAuthorization(_ completion: @escaping (_ success: Bool, _ error: Error?) -> Void) {
-        
-        /* **************************************************************
-         * customize HealthKit data that will be collected
-         * in the background. Choose from any HKQuantityType:
-         * https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
-        **************************************************************/
-        
-        // handle authorization from the OS
-        CKActivityManager.shared.getHealthAuthorizaton(forTypes: hkTypesToReadInBackground) { (success, error) in
-            if (success) {
-                let config = CKPropertyReader(file: "CKConfiguration")
-                let frequency = config.read(query: "Background Read Frequency")
-
-                if frequency == "immediate" {
-                    CKActivityManager.shared.startHealthKitCollectionInBackground(withFrequency: .immediate)
-                    
-                } else if frequency == "daily" {
-                    
-                    CKActivityManager.shared.startHealthKitCollectionInBackground(withFrequency: .daily)
-                    
-                } else if frequency == "weekly" {
-                    CKActivityManager.shared.startHealthKitCollectionInBackground(withFrequency: .weekly)
-                } else if frequency == "hourly" {
-                    CKActivityManager.shared.startHealthKitCollectionInBackground(withFrequency: .hourly)
-                }
-            }
-            completion(success, error)
-        }
-    }
 }
 
 /**
@@ -79,19 +51,14 @@ class CKHealthDataStep: ORKInstructionStep {
 */
 class CKHealthDataStepViewController: ORKInstructionStepViewController {
     
-    var healthDataStep: CKHealthDataStep? {
-        return step as? CKHealthDataStep
-    }
-    
     /**
      When this step is being dismissed, get `HealthKit`  authorization in the process.
      
      Relies on a `CKHealthDataStep` instance as `self.step`.
     */
     override func goForward() {
-        healthDataStep?.getHealthAuthorization() { succeeded, _ in
-            guard succeeded else { return }
-            
+        let manager = CKHealthKitManager.shared
+        manager.getHealthAuthorization() { _,_ in
             OperationQueue.main.addOperation {
                 super.goForward()
             }

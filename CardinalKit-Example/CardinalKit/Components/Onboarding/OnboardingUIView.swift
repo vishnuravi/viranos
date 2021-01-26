@@ -41,6 +41,7 @@ struct OnboardingUIView: View {
     var body: some View {
         VStack(spacing: 10) {
             Spacer()
+<<<<<<< HEAD
 
             Text(config.read(query: "Team Name")).padding(.leading, 20).padding(.trailing, 20)
             Text(config.read(query: "Study Title"))
@@ -48,6 +49,27 @@ struct OnboardingUIView: View {
              .font(.system(size: 35, weight: .bold, design: .default)).padding(.leading, 20).padding(.trailing, 20)
 
             Spacer()
+=======
+            
+            Image("SBDLogoGrey")
+                .resizable()
+                .scaledToFit()
+                .padding(.leading, Metrics.PADDING_HORIZONTAL_MAIN*4)
+                .padding(.trailing, Metrics.PADDING_HORIZONTAL_MAIN*4)
+            
+            Spacer(minLength: 2)
+            
+            Text(config.read(query: "Study Title"))
+                .foregroundColor(self.color)
+                .multilineTextAlignment(.center)
+                .font(.system(size: 35, weight: .bold, design: .default))
+                .padding(.leading, Metrics.PADDING_HORIZONTAL_MAIN)
+                .padding(.trailing, Metrics.PADDING_HORIZONTAL_MAIN)
+            
+            Text(config.read(query: "Team Name"))
+                .padding(.leading, Metrics.PADDING_HORIZONTAL_MAIN)
+                .padding(.trailing, Metrics.PADDING_HORIZONTAL_MAIN)
+>>>>>>> upstream/main
 
             PageView(self.onboardingElements.map { InfoView(logo: $0.logo, title: $0.title, description: $0.description, color: self.color) })
 
@@ -59,10 +81,23 @@ struct OnboardingUIView: View {
                     self.showingDetail.toggle()
                 }, label: {
                      Text("Join Study")
+<<<<<<< HEAD
                         .padding(20).frame(maxWidth: .infinity)
                          .foregroundColor(.white).background(self.color)
                          .cornerRadius(15).font(.system(size: 20, weight: .bold, design: .default))
                 }).sheet(isPresented: $showingDetail, onDismiss: {
+=======
+                        .padding(Metrics.PADDING_BUTTON_LABEL)
+                        .frame(maxWidth: .infinity)
+                        .foregroundColor(.white)
+                        .background(self.color)
+                        .cornerRadius(Metrics.RADIUS_CORNER_BUTTON)
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                })
+                .padding(.leading, Metrics.PADDING_HORIZONTAL_MAIN)
+                .padding(.trailing, Metrics.PADDING_HORIZONTAL_MAIN)
+                .sheet(isPresented: $showingDetail, onDismiss: {
+>>>>>>> upstream/main
                     self.onComplete?()
                 }, content: {
                     OnboardingViewController()
@@ -85,14 +120,30 @@ struct InfoView: View {
             Circle()
                 .fill(color)
                 .frame(width: 100, height: 100, alignment: .center)
+<<<<<<< HEAD
                 .padding(6).overlay(
                     Text(logo).foregroundColor(.white).font(.system(size: 42, weight: .light, design: .default))
+=======
+                .padding(6)
+                .overlay(
+                    Text(logo)
+                        .foregroundColor(.white)
+                        .font(.system(size: 42, weight: .light, design: .default))
+>>>>>>> upstream/main
                 )
 
             Text(title).font(.title)
             
+<<<<<<< HEAD
             Text(description).font(.body).multilineTextAlignment(.center).padding(.leading, 40).padding(.trailing, 40)
             
+=======
+            Text(description)
+                .font(.body)
+                .multilineTextAlignment(.center)
+                .padding(.leading, 40)
+                .padding(.trailing, 40)
+>>>>>>> upstream/main
         }
     }
 }
