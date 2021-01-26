@@ -18,7 +18,7 @@ enum TaskItem: Int {
      */
     case //sampleResearchKitSurvey,
          //sampleResearchKitActiveTask,
-         sampleCoreMotionAppleWatch,
+         //sampleCoreMotionAppleWatch,
          // sampleFunCoffeeSurvey,
          sampleLearnItem,
          backgroundSurvey,
@@ -34,8 +34,8 @@ enum TaskItem: Int {
             return "Background Questionnaire"
         case .survey:
             return "Symptom Questionnaire"
-        case .sampleCoreMotionAppleWatch:
-            return "Sensors Demo"
+        //case .sampleCoreMotionAppleWatch:
+           // return "Sensors Demo"
 //        case .sampleFunCoffeeSurvey:
 //            return "Coffee Survey"
         case .sampleLearnItem:
@@ -52,8 +52,8 @@ enum TaskItem: Int {
             return "One-time demographic questionnaire"
         case .survey:
             return "Weekly symptom reporting"
-        case .sampleCoreMotionAppleWatch:
-            return "CoreMotion & Cloud Storage"
+       // case .sampleCoreMotionAppleWatch:
+         //   return "CoreMotion & Cloud Storage"
 //        case .sampleFunCoffeeSurvey:
 //            return "How do you like your coffee?"
         case .sampleLearnItem:
@@ -72,8 +72,8 @@ enum TaskItem: Int {
             return getImage(named: "ActivityIcon")
 //        case .sampleFunCoffeeSurvey:
 //            return getImage(named: "CoffeeIcon")
-        case .sampleCoreMotionAppleWatch:
-            return getImage(named: "WatchIcon")
+       // case .sampleCoreMotionAppleWatch:
+         //   return getImage(named: "WatchIcon")
         case .sampleLearnItem:
             return getImage(named: "CKLogoIcon")
         default:
@@ -86,7 +86,7 @@ enum TaskItem: Int {
      */
     var section: String {
         switch self {
-        case .backgroundSurvey, .survey, .sampleCoreMotionAppleWatch:
+        case .backgroundSurvey, .survey:
             return "Current Tasks"
 //        case .sampleFunCoffeeSurvey:
 //            return "Your Interests"
@@ -105,8 +105,8 @@ enum TaskItem: Int {
             return AnyView(CKTaskViewController(tasks: StudyTasks.backgroundTask))
         case .survey:
             return AnyView(CKTaskViewController(tasks: StudyTasks.sf12Task))
-        case .sampleCoreMotionAppleWatch:
-            return AnyView(SensorsDemoUIView())
+        //case .sampleCoreMotionAppleWatch:
+          //  return AnyView(SensorsDemoUIView())
 //        case .sampleFunCoffeeSurvey:
 //            return AnyView(CKTaskViewController(tasks: TaskSamples.sampleCoffeeTask))
         case .sampleLearnItem:
