@@ -3,7 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>Study Title</key>
-<<<<<<< HEAD
 	<string>Viranos</string>
 	<key>Team Name</key>
 	<string>Team Viranos</string>
@@ -15,19 +14,6 @@
 	<string>Made at Stanford with ❤️</string>
 	<key>Website</key>
 	<string>https://viranos.org</string>
-=======
-	<string>CardinalKit Study</string>
-	<key>Team Name</key>
-	<string>Stanford Department of Medicine</string>
-	<key>Email</key>
-	<string>contact@domain.com</string>
-	<key>Phone</key>
-	<string>123-456-7890</string>
-	<key>Copyright</key>
-	<string>Made at Stanford with ❤️</string>
-	<key>Website</key>
-	<string>https://cardinalkit.org</string>
->>>>>>> upstream/main
 	<key>Tint Color</key>
 	<string>#b6133f</string>
 	<key>Primary Color</key>
@@ -35,15 +21,9 @@
 	<key>Review Consent Step Text</key>
 	<string>Review Consent Form</string>
 	<key>Reason for Consent Text</key>
-<<<<<<< HEAD
 	<string>Consent to join Project Viranos.</string>
 	<key>Consent File Name</key>
 	<string>Viranos Consent Form</string>
-=======
-	<string>Consent to join the Developer Health Research Study.</string>
-	<key>Consent File Name</key>
-	<string>My Consent Form</string>
->>>>>>> upstream/main
 	<key>Passcode Text</key>
 	<string>Now you will create a passcode to identify yourself to the app and protect access to information you&apos;ve entered.</string>
 	<key>Passcode Type</key>
@@ -51,11 +31,7 @@
 	<key>Completion Step Title</key>
 	<string>Welcome aboard.</string>
 	<key>Completion Step Text</key>
-<<<<<<< HEAD
 	<string>Thank you for joining this study.</string>
-=======
-	<string>This step concludes the onboarding and consent process of the CardinalKit framework. Next up, you will see main app functionality.</string>
->>>>>>> upstream/main
 	<key>Failed Login Title</key>
 	<string>Unable to Login 😔</string>
 	<key>Failed Login Text</key>
@@ -78,22 +54,14 @@
 	<key>Login-Sign-In-With-Apple</key>
 	<dict>
 		<key>Enabled</key>
-<<<<<<< HEAD
-		<false/>
-=======
 		<true/>
->>>>>>> upstream/main
 		<key>Title</key>
 		<string>Sign in with Apple</string>
 		<key>Text</key>
 		<string>Sign in using your Apple ID is fast and easy, and Apple will not track any of your activities.</string>
 	</dict>
 	<key>Login-Passwordless</key>
-<<<<<<< HEAD
-	<true/>
-=======
 	<false/>
->>>>>>> upstream/main
 	<key>Login Step Title</key>
 	<string>Almost done!</string>
 	<key>Login Step Text</key>
@@ -110,11 +78,8 @@
 	<string>Welcome back!</string>
 	<key>Consent Title</key>
 	<string>Research Health Study Consent Form</string>
-<<<<<<< HEAD
-=======
 	<key>Use CareKit</key>
 	<true/>
->>>>>>> upstream/main
 	<key>HealthKit Data to Read</key>
 	<array>
 		<string>StepCount</string>
@@ -205,11 +170,7 @@
 			<key>Description</key>
 			<string>Lorem Ipsum is simply dummy text of the printing and typesetting industry</string>
 			<key>Logo</key>
-<<<<<<< HEAD
-			<string>😁</string>
-=======
 			<string>1️⃣</string>
->>>>>>> upstream/main
 		</dict>
 		<dict>
 			<key>Title</key>
@@ -217,11 +178,7 @@
 			<key>Description</key>
 			<string>Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
 			<key>Logo</key>
-<<<<<<< HEAD
 			<string>🦠</string>
-=======
-			<string>2️⃣</string>
->>>>>>> upstream/main
 		</dict>
 		<dict>
 			<key>Title</key>
@@ -229,11 +186,7 @@
 			<key>Description</key>
 			<string>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
 			<key>Logo</key>
-<<<<<<< HEAD
 			<string>🙉</string>
-=======
-			<string>3️⃣</string>
->>>>>>> upstream/main
 		</dict>
 	</array>
 </dict>
