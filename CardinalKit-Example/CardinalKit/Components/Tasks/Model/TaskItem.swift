@@ -21,6 +21,7 @@ enum TaskItem: Int {
          //sampleCoreMotionAppleWatch,
          // sampleFunCoffeeSurvey,
          resources,
+         dashboard,
          backgroundSurvey,
          survey
     
@@ -40,6 +41,8 @@ enum TaskItem: Int {
 //            return "Coffee Survey"
         case .resources:
             return "Patient Resources"
+        case .dashboard:
+            return "Data Dashboard"
         }
     }
     
@@ -58,6 +61,8 @@ enum TaskItem: Int {
 //            return "How do you like your coffee?"
         case .resources:
             return "Support for patients"
+        case .dashboard:
+            return "Summary of your data"
         }
     }
     
@@ -90,7 +95,7 @@ enum TaskItem: Int {
             return "Current Tasks"
 //        case .sampleFunCoffeeSurvey:
 //            return "Your Interests"
-        case .resources:
+        case .resources, .dashboard:
             return "Learn"
         }
     }
@@ -111,6 +116,8 @@ enum TaskItem: Int {
 //            return AnyView(CKTaskViewController(tasks: TaskSamples.sampleCoffeeTask))
         case .resources:
             return AnyView(ResourcesView())
+        case .dashboard:
+            return AnyView(DashboardView())
         }
     }
     

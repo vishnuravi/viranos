@@ -45,7 +45,7 @@ struct TasksUIView: View {
                 .font(.system(size: 25, weight:.bold))
                 .foregroundColor(self.color)
                 .padding(.top, 10)
-            Text(config.read(query: "Team Name")).font(.system(size: 15, weight:.light))
+            //Text(config.read(query: "Team Name")).font(.system(size: 15, weight:.light))
             Text(self.date).font(.system(size: 18, weight: .regular)).padding()
             List {
                 ForEach(listItemsSections, id: \.self) { key in

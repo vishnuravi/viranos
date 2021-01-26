@@ -65,12 +65,12 @@ internal extension OCKStore {
     }
     
     func createContacts() {
-        var contact1 = OCKContact(id: "oliver", givenName: "Oliver",
-                                  familyName: "Aalami", carePlanUUID: nil)
-        contact1.asset = "OliverAalami"
-        contact1.title = "Vascular Surgeon"
-        contact1.role = "Dr. Aalami is the director of the CardinalKit project."
-        contact1.emailAddresses = [OCKLabeledValue(label: CNLabelEmailiCloud, value: "aalami@stanford.edu")]
+        var contact1 = OCKContact(id: "ashley", givenName: "Ashley",
+                                  familyName: "Griffin", carePlanUUID: nil)
+        contact1.asset = "AshleyGriffin"
+        contact1.title = "Director"
+        contact1.role = "Dr. Griffin is the director of the Viranos project."
+        contact1.emailAddresses = [OCKLabeledValue(label: CNLabelEmailiCloud, value: "ashley@viranosproject.org")]
         contact1.phoneNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(111) 111-1111")]
         contact1.messagingNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(111) 111-1111")]
 
@@ -83,11 +83,11 @@ internal extension OCKStore {
             return address
         }()
 
-        var contact2 = OCKContact(id: "johnny", givenName: "Johnny",
-                                  familyName: "Appleseed", carePlanUUID: nil)
-        contact2.asset = "JohnnyAppleseed"
-        contact2.title = "OBGYN"
-        contact2.role = "Dr. Appleseed is an OBGYN with 13 years of experience."
+        var contact2 = OCKContact(id: "vishnu", givenName: "Vishnu",
+                                  familyName: "Ravi", carePlanUUID: nil)
+        contact2.asset = "VishnuRavi"
+        contact2.title = "Developer"
+        contact2.role = "Dr. Ravi is a developer on the Viranos project"
         contact2.phoneNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
         contact2.messagingNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
         contact2.address = {

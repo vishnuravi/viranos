@@ -11,7 +11,7 @@ import SwiftUI
 struct ResourcesView: View {
     var body: some View {
         VStack {
-            Text("Resources").font(.system(size: 25, weight:.bold))
+            Text("Resources").font(.system(size: 25, weight:.bold)).padding(5)
             Text("Frequently Updated")
                 .font(.caption)
                 .padding(.top, 5)

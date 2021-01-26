@@ -7,13 +7,13 @@
 	<key>Team Name</key>
 	<string>Team Viranos</string>
 	<key>Email</key>
-	<string>viranos@stanford.edu</string>
+	<string>viranos@viranosproject.org</string>
 	<key>Phone</key>
 	<string>650-123-4567</string>
 	<key>Copyright</key>
 	<string>Made at Stanford with ❤️</string>
 	<key>Website</key>
-	<string>https://viranos.org</string>
+	<string>https://viranosproject.org</string>
 	<key>Tint Color</key>
 	<string>#b6133f</string>
 	<key>Primary Color</key>
@@ -77,7 +77,7 @@
 	<key>Passcode On Return Text</key>
 	<string>Welcome back!</string>
 	<key>Consent Title</key>
-	<string>Research Health Study Consent Form</string>
+	<string>Viranos Study Consent Form</string>
 	<key>Use CareKit</key>
 	<true/>
 	<key>HealthKit Data to Read</key>
@@ -94,99 +94,101 @@
 			<key>Title</key>
 			<string>Hi there! 👋🏽</string>
 			<key>Summary</key>
-			<string>CardinalKit is a suite of tools designed to help you build a digital health app experience from the ground up. It integrates with Firebase to provide full-stack solutions. We hope you enjoy the love poured into this sample and make many great things with it!</string>
+			<string>Viranos is a platform developed to help COVID-19 patients monitor their health following diagnosis while also providing researchers and clinicians the tools to improve the understanding of long-term physical and psychosocial effects of the disease.</string>
 			<key>Content</key>
-			<string>CardinalKit is a suite of tools designed to help you build a digital health app experience from the ground up. It integrates with Firebase to provide full-stack solutions. We hope you enjoy the love poured into this sample and make many great things with it!</string>
+			<string>Viranos is a platform developed to help COVID-19 patients monitor their health following diagnosis while also providing researchers and clinicians the tools to improve the understanding of long-term physical and psychosocial effects of the disease.</string>
 		</dict>
 		<key>DataGathering</key>
 		<dict>
 			<key>Title</key>
 			<string>Data Gathering</string>
 			<key>Summary</key>
-			<string>Here you should write a bit about what data you are collecting, and why.</string>
+			<string>Viranos only collects information that you provide via in-app tasks and surveys. Examples of collected information include information that you share in your user profile, answers on symptom surveys, and results of memory task performance.</string>
 			<key>Content</key>
-			<string>Here you should write a bit about what data you are collecting, and why. Additional content written here will show in final consent review form and generated PDF.</string>
+			<string>Viranos only collects information that you provide via in-app tasks and surveys. Examples of collected information include information that you share in your user profile, answers on symptom surveys, and results of memory task performance.</string>
 		</dict>
 		<key>Privacy</key>
 		<dict>
 			<key>Title</key>
 			<string>Privacy</string>
 			<key>Summary</key>
-			<string>What is your commitment in terms of data protection to your app participants? Who will have access to data?</string>
+			<string>Viranos respects the privacy of our users, all data is kept private and confidential.</string>
 			<key>Content</key>
-			<string>What is your commitment in terms of data protection to your app participants? Who will have access to data? Additional content written here will show in final consent review form and generated PDF.</string>
+			<string>Viranos respects the privacy of our users, all data is kept private and confidential.</string>
 		</dict>
 		<key>DataUse</key>
 		<dict>
 			<key>Title</key>
 			<string>Data Use</string>
 			<key>Summary</key>
-			<string>Information about your team&apos;s use of data.</string>
+			<string>Viranos uses your data to provide you with personalized analytics relevant to your COVID-19 symptoms. We also use your data to share relevant resources and to connect you with other patients experiencing similar symptoms to your own. Viranos also partners with researchers and clinicians to provide information regarding the long-term effects of COVID-19 in order to better understand the disease and to improve its management.</string>
 			<key>Content</key>
-			<string>Information about your team&apos;s use of data. Additional content.</string>
+			<string>Viranos uses your data to provide you with personalized analytics relevant to your COVID-19 symptoms. We also use your data to share relevant resources and to connect you with other patients experiencing similar symptoms to your own. Viranos also partners with researchers and clinicians to provide information regarding the long-term effects of COVID-19 in order to better understand the disease and to improve its management.</string>
 		</dict>
 		<key>TimeCommitment</key>
 		<dict>
 			<key>Title</key>
 			<string>Time Commitment</string>
 			<key>Summary</key>
-			<string>Information about the expected time commitment per app participant.</string>
+			<string>This study includes an initial survey that will take you less than 10 minutes to complete. After this, we will ask you to update your symptoms and health questionnaires monthly. Monthly surveys should take less than 10 minutes to complete.</string>
 			<key>Content</key>
-			<string>Information about the expected time commitment per app participant. Additional content.</string>
+			<string>This study includes an initial survey that will take you less than 10 minutes to complete. After this, we will ask you to update your symptoms and health questionnaires monthly. Monthly surveys should take less than 10 minutes to complete.</string>
 		</dict>
 		<key>StudySurvey</key>
 		<dict>
 			<key>Title</key>
 			<string>Study Survey</string>
 			<key>Summary</key>
-			<string>Information about any survey(s) in the app.</string>
+			<string>This survey will ask you to rate your current health status as well any current symptoms that you may be experiencing. This information will be used to help you monitor your health following COVID-19 infection, and will help researchers better understand the long-term physical and psychosocial effects of COVID-19. All of you data is carefully protected as outlined in our Privacy Policy. 
+Please contact your medical provider if you are experiencing worsening COVID-19 symptoms. </string>
 			<key>Content</key>
-			<string>Information about any survey(s) in the app. Additional content.</string>
+			<string>This survey will ask you to rate your current health status as well any current symptoms that you may be experiencing. This information will be used to help you monitor your health following COVID-19 infection, and will help researchers better understand the long-term physical and psychosocial effects of COVID-19. All of you data is carefully protected as outlined in our Privacy Policy. 
+Please contact your medical provider if you are experiencing worsening COVID-19 symptoms. </string>
 		</dict>
 		<key>StudyTasks</key>
 		<dict>
 			<key>Title</key>
 			<string>Study Tasks</string>
 			<key>Summary</key>
-			<string>Information about any task(s) in the app.</string>
+			<string>The spatial memory activity assesses your short-term spatial memory by asking you to repeat the orders in which icons light up. There will be one practice round followed by a real round.</string>
 			<key>Content</key>
-			<string>Information about any task(s) in the app. Additional content.</string>
+			<string>The spatial memory activity assesses your short-term spatial memory by asking you to repeat the orders in which icons light up. There will be one practice round followed by a real round.</string>
 		</dict>
 		<key>Withdrawing</key>
 		<dict>
 			<key>Title</key>
 			<string>Withdrawing</string>
 			<key>Summary</key>
-			<string>What should your study participants know about the withdrawing process of your study?</string>
+			<string>You participation is voluntary, and you may withdraw at any time. You will be asked to complete a brief questionnaire if you choose to withdraw to deteremine your reason for withdrawing and to determine the appropriate data usage.</string>
 			<key>Content</key>
-			<string>What should your study participants know about the withdrawing process of your study? Additional content.</string>
+			<string>You participation is voluntary, and you may withdraw at any time. You will be asked to complete a brief questionnaire if you choose to withdraw to deteremine your reason for withdrawing and to determine the appropriate data usage.</string>
 		</dict>
 	</dict>
 	<key>Onboarding</key>
 	<array>
 		<dict>
 			<key>Title</key>
-			<string>First Title</string>
+			<string>Welcome to Viranos!</string>
 			<key>Description</key>
-			<string>Lorem Ipsum is simply dummy text of the printing and typesetting industry</string>
-			<key>Logo</key>
-			<string>1️⃣</string>
-		</dict>
-		<dict>
-			<key>Title</key>
-			<string>Second Title</string>
-			<key>Description</key>
-			<string>Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+			<string>A platform for symptom tracking and resources to better understand the long implications of COVID-19.</string>
 			<key>Logo</key>
 			<string>🦠</string>
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>Third Title</string>
+			<string>About our Project</string>
 			<key>Description</key>
-			<string>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+			<string>We allow you to keep track of your symptoms after being diagnosed with COVID-19 to help researchers understand the long-term effects of the disease.</string>
 			<key>Logo</key>
-			<string>🙉</string>
+			<string>🦠</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>About our Project</string>
+			<key>Description</key>
+			<string>We also allow you to track of your data and provide you with resources to support you.</string>
+			<key>Logo</key>
+			<string>🦠</string>
 		</dict>
 	</array>
 </dict>
