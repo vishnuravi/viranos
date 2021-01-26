@@ -31,7 +31,6 @@ struct TaskSamples {
     /**
         Coffee Task Example for 9/2 Workshop
      */
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Study/StudyTasks.swift
     static let coffeeTask: ORKOrderedTask = {
         var steps = [ORKStep]()
         
@@ -45,25 +44,13 @@ struct TaskSamples {
         // Coffee Step
         let healthScaleAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
         let healthScaleQuestionStep = ORKQuestionStep(identifier: "HealthScaleQuestionStep", title: "Coffee Intake", question: "How many cups of coffee did you have today?", answer: healthScaleAnswerFormat)
-=======
-    static let sampleCoffeeTask: ORKOrderedTask = {
-        var steps = [ORKStep]()
-        
-        // Coffee Step
-        let healthScaleAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
-        let healthScaleQuestionStep = ORKQuestionStep(identifier: "CoffeeScaleQuestionStep", title: "Coffee Intake", question: "How many cups of coffee did you have today?", answer: healthScaleAnswerFormat)
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Tasks/Model/TaskSamples.swift
         
         steps += [healthScaleQuestionStep]
         
         //SUMMARY
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
         summaryStep.title = "Thank you for tracking your coffee."
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Study/StudyTasks.swift
         summaryStep.text = "We appreciate your time."
-=======
-        summaryStep.text = "We appreciate your time (and caffeinated energy)!"
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Tasks/Model/TaskSamples.swift
         
         steps += [summaryStep]
         
