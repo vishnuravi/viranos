@@ -31,8 +31,8 @@ class ScheduleViewController: OCKDailyPageViewController {
             case .success(let tasks):
 
                 // Add a non-CareKit view into the list
-                let tipTitle = "Customize your app!"
-                let tipText = "Start with the CKConfiguration.plist file."
+                let tipTitle = "Welcome to Viranos!"
+                let tipText = "Check out your schedule for today."
 
                 // Only show the tip view on the current date
                 if Calendar.current.isDate(date, inSameDayAs: Date()) {

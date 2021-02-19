@@ -181,26 +181,6 @@ struct TaskSamples {
         
     }()
     
-    static let sampleCoffeeTask: ORKOrderedTask = {
-        var steps = [ORKStep]()
-        
-        // Coffee Step
-        let healthScaleAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
-        let healthScaleQuestionStep = ORKQuestionStep(identifier: "CoffeeScaleQuestionStep", title: "Coffee Intake", question: "How many cups of coffee do you drink per day?", answer: healthScaleAnswerFormat)
-        
-        steps += [healthScaleQuestionStep]
-        
-        //SUMMARY
-        let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
-        summaryStep.title = "Thank you for tracking your coffee."
-        summaryStep.text = "We appreciate your caffeinated energy! check out the results chart."
-        
-        steps += [summaryStep]
-        
-        return ORKOrderedTask(identifier: "SurveyTask-Coffee", steps: steps)
-        
-    }()
-    
     /**
      Sample task created step-by-step!
     */

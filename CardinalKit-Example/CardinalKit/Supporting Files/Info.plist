@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>CardinalKit</string>
+	<string>Viranos</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,11 +45,11 @@
 	<key>NSFaceIDUsageDescription</key>
 	<string>Used for data security purposes.</string>
 	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
-	<string>Used for CareKit collection sample.</string>
+	<string>Used for research purposes</string>
 	<key>NSHealthShareUsageDescription</key>
-	<string>Used for data security purposes.</string>
+	<string>Used for research purposes</string>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string>Used for data security purposes.</string>
+	<string>Used for research purposes</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Used for sensor collection demo tasks.</string>
 	<key>NSLocationAlwaysUsageDescription</key>

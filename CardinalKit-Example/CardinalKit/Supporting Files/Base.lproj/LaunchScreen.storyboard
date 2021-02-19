@@ -48,7 +48,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CKLogo" width="720" height="360"/>
-        <image name="SBDLogoWhite" width="683" height="569"/>
+        <image name="ViranosLogo" width="236" height="99.5"/>
     </resources>
 </document>
