@@ -11,12 +11,6 @@ import CardinalKit
 
 class CKHealthDataStep: ORKInstructionStep {
     
-<<<<<<< HEAD
-    // TODO: save as configurable element
-    var hkTypesToReadInBackground: Set<HKQuantityType> = []
-
-=======
->>>>>>> upstream/main
     override init(identifier: String) {
         super.init(identifier: identifier)
         

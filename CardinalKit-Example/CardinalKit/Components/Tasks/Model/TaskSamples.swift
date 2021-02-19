@@ -13,16 +13,11 @@ import ResearchKit
 */
 struct TaskSamples {
     
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Study/StudyTasks.swift
-    static let backgroundTask: ORKOrderedTask = {
-        var steps = [ORKStep]()
-=======
     /**
      Active tasks created with short-hand constructors from `ORKOrderedTask`
     */
     static let sampleTappingTask: ORKOrderedTask = {
         let intendedUseDescription = "Finger tapping is a universal way to communicate."
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Tasks/Model/TaskSamples.swift
         
         // Instruction step
         let initialStep = ORKInstructionStep(identifier: "BackgroundTask")
@@ -49,18 +44,11 @@ struct TaskSamples {
         steps += [summaryStep]
      return ORKOrderedTask(identifier: "BackgroundTask", steps: steps)
     
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Study/StudyTasks.swift
-=======
     static let sampleWalkingTask: ORKOrderedTask = {
         let intendedUseDescription = "Tests ability to walk"
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Tasks/Model/TaskSamples.swift
         
     }()
     
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Study/StudyTasks.swift
-
-    static let sf12Task: ORKOrderedTask = {
-=======
     /**
         Coffee Task Example for 9/2 Workshop
      */
@@ -88,7 +76,6 @@ struct TaskSamples {
      Sample task created step-by-step!
     */
     static let sampleSurveyTask: ORKOrderedTask = {
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Tasks/Model/TaskSamples.swift
         var steps = [ORKStep]()
         
         // Instruction step
@@ -164,9 +151,6 @@ struct TaskSamples {
         let textStep = ORKQuestionStep(identifier: "TextStep", title: "Symptoms", question: "Please list all other symptoms you have experienced in the past month. For example, this might include cough, fever, muscle weakness, diarrhea, loss of taste or smell, skin rash, memory lapses, etc. ", answer: textAnswerFormat)
         
         steps += [textStep]
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Study/StudyTasks.swift
-
-=======
         
         
         let formItem = ORKFormItem(identifier: "FormItem1", text: "MODERATE ACTIVITIES, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf:", answerFormat: textChoiceAnswerFormat)
@@ -181,7 +165,6 @@ struct TaskSamples {
         
         steps += [booleanQuestionStep]
         
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Tasks/Model/TaskSamples.swift
         //SUMMARY
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
         summaryStep.title = "Thank you"
@@ -192,12 +175,9 @@ struct TaskSamples {
                 
        
         
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Study/StudyTasks.swift
-=======
         steps += [summaryStep]
         
         return ORKOrderedTask(identifier: "SurveyTask-Assessment", steps: steps)
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Tasks/Model/TaskSamples.swift
     }()
     
    

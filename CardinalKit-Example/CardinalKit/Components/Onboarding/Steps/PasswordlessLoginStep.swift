@@ -36,13 +36,7 @@ class PasswordlessLoginStep: ORKFormStep {
      - Returns a `ORKFormItem` array with questions to show.
     */
     fileprivate func createFormItems() -> [ORKFormItem] {
-<<<<<<< HEAD:CardinalKit-Example/CardinalKit/Components/Onboarding/Steps/PasswordlessLoginStep.swift
-        let emailAnswerFormat = ORKEmailAnswerFormat()
-        let idStepTitle = "Enter your email address:"
-        let idQuestionStep = ORKFormItem(identifier: PasswordlessLoginStep.idStepIdentifier, text: idStepTitle, answerFormat: emailAnswerFormat, optional: false)
-=======
         let idStepTitle = "Email:"
->>>>>>> upstream/main:CardinalKit-Example/CardinalKit/Components/Onboarding/Steps/LoginStep.swift
         
         let titleStep = ORKFormItem(sectionTitle: "✉️ 🌎")
         
