@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F94C5F22536543600DF8866 /* SceneDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94C5F12536543600DF8866 /* SceneDelegate+CardinalKit.swift */; };
-		7785F60325C04D7F00234D6F /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785F60225C04D7F00234D6F /* ResourcesView.swift */; };
-		7785F60525C04F3200234D6F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785F60425C04F3200234D6F /* DashboardView.swift */; };
-		7785F60825C0646700234D6F /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7785F60725C0646700234D6F /* SwiftUICharts */; };
+		7787678C25E07B3E00DBE5FB /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787678B25E07B3E00DBE5FB /* DashboardView.swift */; };
+		7787678E25E07B4400DBE5FB /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787678D25E07B4400DBE5FB /* ResourcesView.swift */; };
 		8E0A43AC244A4A0400656518 /* CKStudyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4382244A4A0400656518 /* CKStudyUser.swift */; };
 		8E0A43AD244A4A0400656518 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4384244A4A0400656518 /* Constants.swift */; };
 		8E0A43AE244A4A0400656518 /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4386244A4A0400656518 /* ORKESerialization.m */; };
@@ -48,6 +47,10 @@
 		8E6E1E2E25353A1E0024B8DF /* PatientIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E2D25353A1E0024B8DF /* PatientIDView.swift */; };
 		8E6E1E3225353ABE0024B8DF /* ProfileUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E3125353ABE0024B8DF /* ProfileUIView.swift */; };
 		8E6E1E3425353AFE0024B8DF /* EmailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E3325353AFE0024B8DF /* EmailHelper.swift */; };
+		8E7FFFB425DCE9B7002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFB325DCE9B7002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift */; };
+		8E7FFFB825DE350A002982B4 /* CoffeeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFB725DE350A002982B4 /* CoffeeUIView.swift */; };
+		8E7FFFBB25DE37FF002982B4 /* CoffeePieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFBA25DE37FF002982B4 /* CoffeePieChartView.swift */; };
+		8E7FFFBD25DE38E4002982B4 /* CoffeeChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FFFBC25DE38E4002982B4 /* CoffeeChartDataSource.swift */; };
 		8E9CDE912591534B00C8A228 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE902591534B00C8A228 /* CareKitStore */; };
 		8E9CDE932591534B00C8A228 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE922591534B00C8A228 /* CareKitFHIR */; };
 		8E9CDE952591534B00C8A228 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE942591534B00C8A228 /* CareKit */; };
@@ -68,7 +71,7 @@
 		8EA664892593213000B6A45A /* CKSendHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664882593213000B6A45A /* CKSendHelper.swift */; };
 		8EA664AD2593380D00B6A45A /* SendRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664AC2593380D00B6A45A /* SendRecordsView.swift */; };
 		8EA664B025941A4D00B6A45A /* SurveyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664AF25941A4D00B6A45A /* SurveyItemViewController.swift */; };
-		8EA664B2259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664B1259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift */; };
+		8EA664B2259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */; };
 		8EA664B42594387900B6A45A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664B32594387900B6A45A /* Errors.swift */; };
 		8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */; };
 		D253D132250D1BDB00A363E4 /* CKSignInWithAppleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253D131250D1BDB00A363E4 /* CKSignInWithAppleStep.swift */; };
@@ -104,8 +107,8 @@
 		607FACD01AFB9204008FA782 /* CardinalKit Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CardinalKit Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AA5CD1C2188D392530510F /* CardinalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardinalKit.podspec; path = ../CardinalKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7785F60225C04D7F00234D6F /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
-		7785F60425C04F3200234D6F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		7787678B25E07B3E00DBE5FB /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		7787678D25E07B4400DBE5FB /* ResourcesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardinalKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E0A4382244A4A0400656518 /* CKStudyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKStudyUser.swift; sourceTree = "<group>"; };
 		8E0A4384244A4A0400656518 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -146,6 +149,10 @@
 		8E6E1E2D25353A1E0024B8DF /* PatientIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientIDView.swift; sourceTree = "<group>"; };
 		8E6E1E3125353ABE0024B8DF /* ProfileUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUIView.swift; sourceTree = "<group>"; };
 		8E6E1E3325353AFE0024B8DF /* EmailHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHelper.swift; sourceTree = "<group>"; };
+		8E7FFFB325DCE9B7002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKUploadToGCPTaskViewControllerDelegate.swift; sourceTree = "<group>"; };
+		8E7FFFB725DE350A002982B4 /* CoffeeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeUIView.swift; sourceTree = "<group>"; };
+		8E7FFFBA25DE37FF002982B4 /* CoffeePieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePieChartView.swift; sourceTree = "<group>"; };
+		8E7FFFBC25DE38E4002982B4 /* CoffeeChartDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeChartDataSource.swift; sourceTree = "<group>"; };
 		8E9CDEA625916B2800C8A228 /* ScheduleViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		8E9CDEA825916E6600C8A228 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		8E9CDEAC259170AD00C8A228 /* CKCareKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitManager.swift; sourceTree = "<group>"; };
@@ -162,7 +169,7 @@
 		8EA664882593213000B6A45A /* CKSendHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKSendHelper.swift; sourceTree = "<group>"; };
 		8EA664AC2593380D00B6A45A /* SendRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRecordsView.swift; sourceTree = "<group>"; };
 		8EA664AF25941A4D00B6A45A /* SurveyItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyItemViewController.swift; sourceTree = "<group>"; };
-		8EA664B1259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitRemoteSynchronizable.swift; sourceTree = "<group>"; };
+		8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitRemoteSyncWithFirestore.swift; sourceTree = "<group>"; };
 		8EA664B32594387900B6A45A /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
 		CB97C14C759E56B88E4E3941 /* Pods_CardinalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +190,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9CDE952591534B00C8A228 /* CareKit in Frameworks */,
-				7785F60825C0646700234D6F /* SwiftUICharts in Frameworks */,
 				8E0A43CE244A60D800656518 /* Pods_CardinalKit_Example.framework in Frameworks */,
 				8E9CDE972591534B00C8A228 /* CareKitUI in Frameworks */,
 				8E0A43D5244A693D00656518 /* HealthKit.framework in Frameworks */,
@@ -290,7 +296,6 @@
 				8E9CDF7F2591E62000C8A228 /* Model */,
 				8E6E1E2F25353A550024B8DF /* Views */,
 				8E6E1E25253537E40024B8DF /* TasksUIView.swift */,
-				8E6E1E172535263F0024B8DF /* CKTaskViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -362,8 +367,8 @@
 				8E6E1E27253538CC0024B8DF /* TaskListItemView.swift */,
 				8E9CDF822592844A00C8A228 /* LearnUIView.swift */,
 				8EA664222592E57200B6A45A /* SensorsDemoUIView.swift */,
-				7785F60225C04D7F00234D6F /* ResourcesView.swift */,
-				7785F60425C04F3200234D6F /* DashboardView.swift */,
+				8E7FFFB725DE350A002982B4 /* CoffeeUIView.swift */,
+				8E7FFFBA25DE37FF002982B4 /* CoffeePieChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -396,6 +401,8 @@
 		8E9CDEAA25916F2A00C8A228 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7787678B25E07B3E00DBE5FB /* DashboardView.swift */,
+				7787678D25E07B4400DBE5FB /* ResourcesView.swift */,
 				8E6E1E23253537580024B8DF /* MainUIView.swift */,
 				E29143FB24E74AD100EE97B2 /* LaunchUIView.swift */,
 				8E0A4399244A4A0400656518 /* Onboarding */,
@@ -412,7 +419,7 @@
 			children = (
 				8E9CDEAC259170AD00C8A228 /* CKCareKitManager.swift */,
 				8E9CDEAE259172C200C8A228 /* CKCareKitManager+Sample.swift */,
-				8EA664B1259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift */,
+				8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */,
 			);
 			path = CareKit;
 			sourceTree = "<group>";
@@ -448,6 +455,7 @@
 			children = (
 				8E0A438F244A4A0400656518 /* TaskSamples.swift */,
 				8E0A4391244A4A0400656518 /* TaskItem.swift */,
+				8E7FFFBC25DE38E4002982B4 /* CoffeeChartDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,6 +475,8 @@
 				8E0A4386244A4A0400656518 /* ORKESerialization.m */,
 				8E0A4387244A4A0400656518 /* ORKESerialization.h */,
 				8E0A43A2244A4A0400656518 /* ConsentDocument.swift */,
+				8E6E1E172535263F0024B8DF /* CKTaskViewController.swift */,
+				8E7FFFB325DCE9B7002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift */,
 			);
 			path = ResearchKit;
 			sourceTree = "<group>";
@@ -506,7 +516,6 @@
 				8E9CDE922591534B00C8A228 /* CareKitFHIR */,
 				8E9CDE942591534B00C8A228 /* CareKit */,
 				8E9CDE962591534B00C8A228 /* CareKitUI */,
-				7785F60725C0646700234D6F /* SwiftUICharts */,
 			);
 			productName = CardinalKit;
 			productReference = 607FACD01AFB9204008FA782 /* CardinalKit Example.app */;
@@ -541,7 +550,6 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
 				8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */,
-				7785F60625C0646700234D6F /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -671,7 +679,7 @@
 				E29143FC24E74AD100EE97B2 /* LaunchUIView.swift in Sources */,
 				8EA6648725930B6B00B6A45A /* CKHealthRecordsStepViewController.swift in Sources */,
 				8E0A43C0244A4A0400656518 /* PasswordlessLoginStep.swift in Sources */,
-				8EA664B2259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift in Sources */,
+				8EA664B2259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift in Sources */,
 				8EA664AD2593380D00B6A45A /* SendRecordsView.swift in Sources */,
 				8E6E1E28253538CC0024B8DF /* TaskListItemView.swift in Sources */,
 				8E0A43B3244A4A0400656518 /* TaskSamples.swift in Sources */,
@@ -685,11 +693,13 @@
 				2F94C5F22536543600DF8866 /* SceneDelegate+CardinalKit.swift in Sources */,
 				8E9CDFAE2592B79900C8A228 /* Metrics.swift in Sources */,
 				8E6E1E092534F4100024B8DF /* OnboardingViewController.swift in Sources */,
+				8E7FFFB425DCE9B7002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */,
 				8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */,
 				8E0A43B9244A4A0400656518 /* AppDelegate.swift in Sources */,
 				8EA664232592E57200B6A45A /* SensorsDemoUIView.swift in Sources */,
 				8E6E1E3225353ABE0024B8DF /* ProfileUIView.swift in Sources */,
 				8E6E1E1E253528F50024B8DF /* SupportView.swift in Sources */,
+				7787678C25E07B3E00DBE5FB /* DashboardView.swift in Sources */,
 				8E6E1E1C253528D70024B8DF /* ReportView.swift in Sources */,
 				8E6E1E26253537E40024B8DF /* TasksUIView.swift in Sources */,
 				8E9CDEAD259170AD00C8A228 /* CKCareKitManager.swift in Sources */,
@@ -701,12 +711,15 @@
 				8EA664B42594387900B6A45A /* Errors.swift in Sources */,
 				8E6E1E1225351F830024B8DF /* DocumentPreviewViewController.swift in Sources */,
 				8E6E1E20253529760024B8DF /* DocumentView.swift in Sources */,
+				8E7FFFBB25DE37FF002982B4 /* CoffeePieChartView.swift in Sources */,
+				8E7FFFB825DE350A002982B4 /* CoffeeUIView.swift in Sources */,
 				8E0A43B5244A4A0400656518 /* TaskItem.swift in Sources */,
 				8E6E1E2C253539AE0024B8DF /* ChangePasscodeView.swift in Sources */,
 				8E0A43AD244A4A0400656518 /* Constants.swift in Sources */,
 				8E0A43BE244A4A0400656518 /* CKHealthDataStepViewController.swift in Sources */,
 				8E0A43AE244A4A0400656518 /* ORKESerialization.m in Sources */,
 				8E9CDEB6259181B400C8A228 /* CareTeamViewControllerRepresentable.swift in Sources */,
+				7787678E25E07B4400DBE5FB /* ResourcesView.swift in Sources */,
 				8E9CDEAF259172C200C8A228 /* CKCareKitManager+Sample.swift in Sources */,
 				8E9CDEA925916E6600C8A228 /* ScheduleViewController.swift in Sources */,
 				D253D132250D1BDB00A363E4 /* CKSignInWithAppleStep.swift in Sources */,
@@ -714,15 +727,14 @@
 				8E0A43AC244A4A0400656518 /* CKStudyUser.swift in Sources */,
 				8E0A43C3244A4A0400656518 /* LoginCustomWaitStepViewController.swift in Sources */,
 				8E9CDEB22591739A00C8A228 /* TipView.swift in Sources */,
+				8E7FFFBD25DE38E4002982B4 /* CoffeeChartDataSource.swift in Sources */,
 				E2F1FD7624D61EDA006C39DF /* CKPropertyReader.swift in Sources */,
 				8E6E1E1025351E890024B8DF /* Extensions+UIColor.swift in Sources */,
-				7785F60325C04D7F00234D6F /* ResourcesView.swift in Sources */,
 				8E9CDF832592844A00C8A228 /* LearnUIView.swift in Sources */,
 				8E9CDEA725916B2800C8A228 /* ScheduleViewControllerRepresentable.swift in Sources */,
 				E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */,
 				8E6E1E16253524500024B8DF /* WithdrawalViewController.swift in Sources */,
 				8E6E1E2A2535398D0024B8DF /* HelpView.swift in Sources */,
-				7785F60525C04F3200234D6F /* DashboardView.swift in Sources */,
 				8E9CDED02591AC4A00C8A228 /* CKHealthKitManager.swift in Sources */,
 				8E0A43C2244A4A0400656518 /* ConsentDocument.swift in Sources */,
 			);
@@ -849,7 +861,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "CardinalKit-Example.entitlements";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -857,7 +869,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cardinalkit;
 				PRODUCT_NAME = "CardinalKit Example";
@@ -875,7 +887,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "CardinalKit-Example.entitlements";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -883,7 +895,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cardinalkit;
 				PRODUCT_NAME = "CardinalKit Example";
@@ -917,14 +929,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7785F60625C0646700234D6F /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.4;
-			};
-		};
 		8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
@@ -936,11 +940,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7785F60725C0646700234D6F /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7785F60625C0646700234D6F /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
-		};
 		8E9CDE902591534B00C8A228 /* CareKitStore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */;

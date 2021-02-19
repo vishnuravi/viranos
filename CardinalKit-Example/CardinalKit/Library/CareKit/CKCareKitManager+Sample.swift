@@ -86,8 +86,8 @@ internal extension OCKStore {
         var contact2 = OCKContact(id: "vishnu", givenName: "Vishnu",
                                   familyName: "Ravi", carePlanUUID: nil)
         contact2.asset = "VishnuRavi"
-        contact2.title = "Developer"
-        contact2.role = "Dr. Ravi is a developer on the Viranos project"
+        contact2.title = "Director"
+        contact2.role = "Dr. Ravi is the director of the Viranos project"
         contact2.phoneNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
         contact2.messagingNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
         contact2.address = {

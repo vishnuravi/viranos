@@ -4,7 +4,6 @@
 //  Created for the CardinalKit Framework.
 //  Copyright © 2019 Stanford University. All rights reserved.
 //
-
 import ResearchKit
 
 
