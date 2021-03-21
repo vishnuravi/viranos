@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F94C5F22536543600DF8866 /* SceneDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94C5F12536543600DF8866 /* SceneDelegate+CardinalKit.swift */; };
+		774EF9822607B3D8006B2F78 /* LoginExistingUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774EF9812607B3D8006B2F78 /* LoginExistingUserViewController.swift */; };
+		774EF9842607B5C3006B2F78 /* StudyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774EF9832607B5C3006B2F78 /* StudyTasks.swift */; };
 		7787678C25E07B3E00DBE5FB /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787678B25E07B3E00DBE5FB /* DashboardView.swift */; };
 		7787678E25E07B4400DBE5FB /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787678D25E07B4400DBE5FB /* ResourcesView.swift */; };
 		8E0A43AC244A4A0400656518 /* CKStudyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4382244A4A0400656518 /* CKStudyUser.swift */; };
@@ -107,6 +109,8 @@
 		607FACD01AFB9204008FA782 /* CardinalKit Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CardinalKit Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AA5CD1C2188D392530510F /* CardinalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardinalKit.podspec; path = ../CardinalKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		774EF9812607B3D8006B2F78 /* LoginExistingUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginExistingUserViewController.swift; sourceTree = "<group>"; };
+		774EF9832607B5C3006B2F78 /* StudyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTasks.swift; sourceTree = "<group>"; };
 		7787678B25E07B3E00DBE5FB /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		7787678D25E07B4400DBE5FB /* ResourcesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardinalKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -305,6 +309,7 @@
 			children = (
 				8E0A439C244A4A0400656518 /* Steps */,
 				8E6E1E2125352C780024B8DF /* OnboardingUIView.swift */,
+				774EF9812607B3D8006B2F78 /* LoginExistingUserViewController.swift */,
 				8E6E1E082534F4100024B8DF /* OnboardingViewController.swift */,
 				8E6E1E0A2534FF640024B8DF /* OnboardingViewController+Coordinator.swift */,
 				8E6E1E0C25351D8F0024B8DF /* PageViewController.swift */,
@@ -456,6 +461,7 @@
 				8E0A438F244A4A0400656518 /* TaskSamples.swift */,
 				8E0A4391244A4A0400656518 /* TaskItem.swift */,
 				8E7FFFBC25DE38E4002982B4 /* CoffeeChartDataSource.swift */,
+				774EF9832607B5C3006B2F78 /* StudyTasks.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -701,6 +707,7 @@
 				8E6E1E1E253528F50024B8DF /* SupportView.swift in Sources */,
 				7787678C25E07B3E00DBE5FB /* DashboardView.swift in Sources */,
 				8E6E1E1C253528D70024B8DF /* ReportView.swift in Sources */,
+				774EF9842607B5C3006B2F78 /* StudyTasks.swift in Sources */,
 				8E6E1E26253537E40024B8DF /* TasksUIView.swift in Sources */,
 				8E9CDEAD259170AD00C8A228 /* CKCareKitManager.swift in Sources */,
 				8EA664892593213000B6A45A /* CKSendHelper.swift in Sources */,
@@ -708,6 +715,7 @@
 				8E6E1E24253537580024B8DF /* MainUIView.swift in Sources */,
 				8E6E1E182535263F0024B8DF /* CKTaskViewController.swift in Sources */,
 				8E9CDF142591B73900C8A228 /* CKHealthRecordsManager.swift in Sources */,
+				774EF9822607B3D8006B2F78 /* LoginExistingUserViewController.swift in Sources */,
 				8EA664B42594387900B6A45A /* Errors.swift in Sources */,
 				8E6E1E1225351F830024B8DF /* DocumentPreviewViewController.swift in Sources */,
 				8E6E1E20253529760024B8DF /* DocumentView.swift in Sources */,
