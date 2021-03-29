@@ -23,19 +23,25 @@ internal extension OCKStore {
 
         let coffeeElement = OCKScheduleElement(start: beforeBreakfast, end: nil, interval: DateComponents(day: 1))
         let coffeeSchedule = OCKSchedule(composing: [coffeeElement])
-        var coffee = OCKTask(id: "coffee", title: "Drink Coffee ☕️", carePlanUUID: nil, schedule: coffeeSchedule)
+        var coffee = OCKTask(id: "coffee", title: "Drink Water ☕️", carePlanUUID: nil, schedule: coffeeSchedule)
         coffee.impactsAdherence = true
-        coffee.instructions = "Drink coffee for good spirits!"
         
-        let surveyElement = OCKScheduleElement(start: afterLunch, end: nil, interval: DateComponents(day: 1))
+        let surveyElement = OCKScheduleElement(start: thisMorning, end: nil , interval: DateComponents(day: 60))
         let surveySchedule = OCKSchedule(composing: [surveyElement])
-        var survey = OCKTask(id: "survey", title: "Take a Survey 📝", carePlanUUID: nil, schedule: surveySchedule)
+        var survey = OCKTask(id: "survey", title: "Background Survey 📝", carePlanUUID: nil, schedule: surveySchedule)
         survey.impactsAdherence = true
-        survey.instructions = "You can schedule any ResearchKit survey in your app."
+        survey.instructions = "Complete a one-time background survey."
         
-        /*
-         Doxylamine and Nausea DEMO.
-         */
+        let surveyElement2 = OCKScheduleElement(start: thisMorning, end: nil, interval: DateComponents(day: 7))
+        let surveySchedule2 = OCKSchedule(composing: [surveyElement2])
+        var survey2 = OCKTask(id: "survey2", title: "Symptom Reporting Survey 📝", carePlanUUID: nil, schedule: surveySchedule2)
+        survey2.impactsAdherence = true
+        survey2.instructions = "Complete your weekly survey to report your overall health and functioning."
+        
+        
+        
+        // Doxylamine and Nausea DEMO.
+       
         let doxylamineSchedule = OCKSchedule(composing: [
             OCKScheduleElement(start: beforeBreakfast, end: nil,
                                interval: DateComponents(day: 2)),
@@ -57,19 +63,19 @@ internal extension OCKStore {
                              carePlanUUID: nil, schedule: nauseaSchedule)
         nausea.impactsAdherence = false
         nausea.instructions = "Tap the button below anytime you experience nausea."
-        /* ---- */
-
-        addTasks([nausea, doxylamine, survey, coffee], callbackQueue: .main, completion: nil)
+    
+ 
+        addTasks([survey, survey2], callbackQueue: .main, completion: nil)
 
         createContacts()
     }
     
     func createContacts() {
-        var contact1 = OCKContact(id: "ashley", givenName: "Ashley",
+        var contact1 = OCKContact(id: "ashley", givenName: "Dr. Reid",
                                   familyName: "Griffin", carePlanUUID: nil)
-        contact1.asset = "AshleyGriffin"
-        contact1.title = "Director"
-        contact1.role = "Dr. Griffin is the director of the Viranos project."
+        contact1.asset = "ReidGriffin"
+        contact1.title = "Infectious Disease Specialist"
+        contact1.role = "Long-term COVID-19 Clinic"
         contact1.emailAddresses = [OCKLabeledValue(label: CNLabelEmailiCloud, value: "ashley@viranosproject.org")]
         contact1.phoneNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(111) 111-1111")]
         contact1.messagingNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(111) 111-1111")]
@@ -83,11 +89,11 @@ internal extension OCKStore {
             return address
         }()
 
-        var contact2 = OCKContact(id: "vishnu", givenName: "Vishnu",
+        var contact2 = OCKContact(id: "vishnu", givenName: "Dr. Vishnu",
                                   familyName: "Ravi", carePlanUUID: nil)
         contact2.asset = "VishnuRavi"
-        contact2.title = "Developer"
-        contact2.role = "Dr. Ravi is a developer on the Viranos project"
+        contact2.title = "Primary Care Provider"
+        contact2.role = "Internal Medicine Clinic"
         contact2.phoneNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
         contact2.messagingNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
         contact2.address = {
@@ -98,35 +104,25 @@ internal extension OCKStore {
             address.postalCode = "94305"
             return address
         }()
+        
+        var contact3 = OCKContact(id: "mohini", givenName: "Dr. Mohini",
+                                  familyName: "Adkar", carePlanUUID: nil)
+        contact3.asset = "MohiniAdkar"
+        contact3.title = "Pulmonologist"
+        contact3.role = "Outpatient Pulmonology Clinic"
+        contact3.phoneNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
+        contact3.messagingNumbers = [OCKLabeledValue(label: CNLabelWork, value: "(324) 555-7415")]
+        contact3.address = {
+            let address = OCKPostalAddress()
+            address.street = "325 Campus Drive"
+            address.city = "Stanford"
+            address.state = "CA"
+            address.postalCode = "94305"
+            return address
+        }()
 
-        addContacts([contact2, contact1])
+        addContacts([contact2, contact3, contact1])
     }
     
 }
 
-extension OCKHealthKitPassthroughStore {
-
-    internal func populateSampleData() {
-
-        let schedule = OCKSchedule.dailyAtTime(
-            hour: 8, minutes: 0, start: Date(), end: nil, text: nil,
-            duration: .hours(12), targetValues: [OCKOutcomeValue(2000.0, units: "Steps")])
-
-        let steps = OCKHealthKitTask(
-            id: "steps",
-            title: "Daily Steps Goal 🏃🏽‍♂️",
-            carePlanUUID: nil,
-            schedule: schedule,
-            healthKitLinkage: OCKHealthKitLinkage(
-                quantityIdentifier: .stepCount,
-                quantityType: .cumulative,
-                unit: .count()))
-
-        addTasks([steps]) { result in
-            switch result {
-            case .success: print("Added tasks into HealthKitPassthroughStore!")
-            case .failure(let error): print("Error: \(error)")
-            }
-        }
-    }
-}

@@ -5,7 +5,7 @@
 //  Created for the CardinalKit Framework.
 //  Copyright © 2019 Stanford University. All rights reserved.
 //
-
+/*
 import SwiftUI
 import ResearchKit
 
@@ -28,7 +28,7 @@ struct TasksUIView: View {
         self.date = formatter.string(from: Date())
         
         if listItemsPerHeader.count <= 0 { // init
-            for item in listItems {
+           for item in listItems {
                 if listItemsPerHeader[item.section] == nil {
                     listItemsPerHeader[item.section] = [TaskItem]()
                     listItemsSections.append(item.section)
@@ -65,3 +65,4 @@ struct TasksUIView_Previews: PreviewProvider {
         TasksUIView(color: Color.red)
     }
 }
+*/

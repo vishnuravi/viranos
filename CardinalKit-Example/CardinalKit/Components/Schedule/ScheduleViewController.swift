@@ -15,12 +15,12 @@ class ScheduleViewController: OCKDailyPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Schedule"
+        title = "Home"
     }
     
     override func dailyPageViewController(_ dailyPageViewController: OCKDailyPageViewController, prepare listViewController: OCKListViewController, for date: Date) {
         
-        let identifiers = ["doxylamine", "nausea", "coffee", "survey", "steps", "heartRate"]
+        let identifiers = ["doxylamine", "nausea", "coffee", "survey", "survey2", "steps", "heartRate"]
         var query = OCKTaskQuery(for: date)
         query.ids = identifiers
         query.excludesTasksWithNoEvents = true
@@ -31,9 +31,11 @@ class ScheduleViewController: OCKDailyPageViewController {
             case .success(let tasks):
 
                 // Add a non-CareKit view into the list
-                let tipTitle = "Welcome to Viranos!"
-                let tipText = "Check out your schedule for today."
+                let tipTitle = "Hi Ashley!"
+                let tipText = "Below are your upcoming surveys. You can also access resources for clinical trials and connect with others."
 
+               
+                
                 // Only show the tip view on the current date
                 if Calendar.current.isDate(date, inSameDayAs: Date()) {
                     let tipView = TipView()
@@ -43,24 +45,6 @@ class ScheduleViewController: OCKDailyPageViewController {
                     listViewController.appendView(tipView, animated: false)
                 }
 
-                if #available(iOS 14, *), let walkTask = tasks.first(where: { $0.id == "steps" }) {
-
-                    let view = NumericProgressTaskView(
-                        task: walkTask,
-                        eventQuery: OCKEventQuery(for: date),
-                        storeManager: self.storeManager)
-                        .padding([.vertical], 10)
-
-                    listViewController.appendViewController(view.formattedHostingController(), animated: false)
-                }
-
-                // Since the coffee task is only scheduled every other day, there will be cases
-                // where it is not contained in the tasks array returned from the query.
-                if let coffeeTask = tasks.first(where: { $0.id == "coffee" }) {
-                    let coffeeCard = OCKSimpleTaskViewController(task: coffeeTask, eventQuery: .init(for: date),
-                                                                 storeManager: self.storeManager)
-                    listViewController.appendViewController(coffeeCard, animated: false)
-                }
                 
                 if let surveyTask = tasks.first(where: { $0.id == "survey" }) {
                     let surveyCard = SurveyItemViewController(
@@ -68,10 +52,46 @@ class ScheduleViewController: OCKDailyPageViewController {
                         task: surveyTask,
                         eventQuery: .init(for: date),
                         storeManager: self.storeManager)
-                    
-                    listViewController.appendViewController(surveyCard, animated: false)
+                                   
+                        listViewController.appendViewController(surveyCard, animated: false)
+                               }
+                
+                
+                if let surveyTask2 = tasks.first(where: { $0.id == "survey2" }) {
+                    let surveyCard2 = SymptomSurveyItemViewController(
+                        viewSynchronizer: SymptomSurveyItemViewSynchronizer(),
+                        task: surveyTask2,
+                        eventQuery: .init(for: date),
+                        storeManager: self.storeManager)
+                                   
+                        listViewController.appendViewController(surveyCard2, animated: false)
+                               }
+                
+                let resources = TipView()
+                var body: some View {
+                    VStack {
+                        Text("Resources").font(.system(size: 25, weight:.bold)).padding(5)
+                        Text("Frequently Updated")
+                            .font(.caption)
+                            .padding(.top, 5)
+                        ScrollView {
+                            VStack {
+                                CardView(title: "Points", headline: "Incentives", description: "Redeem participation points for rewards like gift cards, badges and more.", button: "View My Rewards", modal: "memes")
+                                CardView(title: "Clinical Studies", headline: "Research", description: "Learn about clinical studies for patients having long term symptoms of COVID-19", button: "View Studies", modal: "studies")
+                                CardView(title: "Community", headline: "Connect", description: "Connect with other people experiencing long term COVID-19 symptoms", button: "Open Chat", modal: "threads")
+                            }
+                        }
+                    }
                 }
-
+                resources.headerView.titleLabel.text = "Resources"
+                resources.headerView.detailLabel.text = "Add in cards for clinical studies, community, and points..."
+                //tipView2.imageView.image = UIImage(named: "GraphicOperatingSystem")
+                listViewController.appendView(resources, animated: false)
+                
+    
+                    
+                }
+            /*
                 // Create a card for the water task if there are events for it on this day.
                 if let doxylamineTask = tasks.first(where: { $0.id == "doxylamine" }) {
 
@@ -83,6 +103,7 @@ class ScheduleViewController: OCKDailyPageViewController {
                     listViewController.appendViewController(doxylamineCard, animated: false)
                 }
 
+                
                 // Create a card for the nausea task if there are events for it on this day.
                 // Its OCKSchedule was defined to have daily events, so this task should be
                 // found in `tasks` every day after the task start date.
@@ -131,16 +152,14 @@ class ScheduleViewController: OCKDailyPageViewController {
                                                                     storeManager: self.storeManager)
                     listViewController.appendViewController(nauseaCard, animated: false)
                 }
+ */
             }
         }
     }
     
-}
 
-private extension View {
-    func formattedHostingController() -> UIHostingController<Self> {
-        let viewController = UIHostingController(rootView: self)
-        viewController.view.backgroundColor = .clear
-        return viewController
-    }
-}
+
+
+
+
+

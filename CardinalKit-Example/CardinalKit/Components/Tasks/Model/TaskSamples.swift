@@ -8,9 +8,9 @@
 import ResearchKit
 
 
-struct StudyTasks {
+struct StudyTasks2 {
     
-    static let backgroundTask: ORKNavigableOrderedTask = {
+    static let backgroundTask: ORKOrderedTask = {
         var steps = [ORKStep]()
         
         
@@ -84,12 +84,12 @@ struct StudyTasks {
         
         // Build Navigation Rules
        // if no for q7, skip to q11
-        let task = ORKNavigableOrderedTask(identifier: "questions", steps: steps)
+        let task = ORKNavigableOrderedTask(identifier: "BackgroundTask", steps: steps)
         let resultSelector = ORKResultSelector(resultIdentifier:q7Step.identifier)
-        let predicate = ORKResultPredicate.predicateForTextQuestionResult(with: resultSelector, expectedString: "No")
+        let predicate = ORKResultPredicate.predicateForTextQuestionResult(with: resultSelector, expectedString: "2")
         let navigationRule = ORKPredicateStepNavigationRule(resultPredicatesAndDestinationStepIdentifiers: [(predicate, q11Step.identifier)])
                 
-        task.setNavigationRule(navigationRule, forTriggerStepIdentifier: q7Step.identifier)
+        //task.setNavigationRule(navigationRule, forTriggerStepIdentifier: q7Step.identifier)
         
         
         
@@ -100,9 +100,9 @@ struct StudyTasks {
        steps += [summaryStep]
         
         
-        return ORKNavigableOrderedTask(identifier: "BackgroundTask", steps: steps)
+        return ORKOrderedTask(identifier: "BackgroundTask", steps: steps)
     
-        
+            as! ORKNavigableOrderedTask     
         
     }()
     

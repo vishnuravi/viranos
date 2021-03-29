@@ -11,7 +11,7 @@ import SwiftUICharts
 import Foundation
 import FirebaseFirestore
 
-struct DashboardView: View {
+struct DashboardUIView: View {
     var body: some View {
         
         VStack{
@@ -27,6 +27,14 @@ struct DashboardView: View {
         }
     }
 }
+
+struct DashboardUIView_Previews: PreviewProvider {
+    static var previews: some View {
+        return DashboardUIView()
+    }
+}
+
+
     
     
 
