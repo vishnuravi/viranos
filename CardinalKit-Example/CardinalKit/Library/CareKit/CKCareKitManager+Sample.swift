@@ -121,7 +121,7 @@ internal extension OCKStore {
             return address
         }()
 
-        addContacts([contact2, contact3, contact1])
+        addContacts([contact3, contact1, contact2])
     }
     
 }
