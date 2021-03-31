@@ -114,8 +114,8 @@ class SymptomSurveyItemViewController: OCKInstructionsTaskViewController, ORKTas
             let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
             summaryStep.title = "Thank you"
             summaryStep.text = "We appreciate your time."
-                    
-            //steps += [summaryStep]
+            steps += [summaryStep]
+        
         //return ORKOrderedTask(identifier: "survey", steps: steps)
         let surveyTask = ORKOrderedTask(identifier: "survey2", steps: steps)
         let surveyViewController = ORKTaskViewController(task: surveyTask, taskRun: nil)

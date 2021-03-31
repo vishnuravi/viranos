@@ -68,25 +68,31 @@ class ScheduleViewController: OCKDailyPageViewController {
                                }
                 
                 let resources = TipView()
-                var body: some View {
-                    VStack {
-                        Text("Resources").font(.system(size: 25, weight:.bold)).padding(5)
-                        Text("Frequently Updated")
-                            .font(.caption)
-                            .padding(.top, 5)
-                        ScrollView {
-                            VStack {
-                                CardView(title: "Points", headline: "Incentives", description: "Redeem participation points for rewards like gift cards, badges and more.", button: "View My Rewards", modal: "memes")
-                                CardView(title: "Clinical Studies", headline: "Research", description: "Learn about clinical studies for patients having long term symptoms of COVID-19", button: "View Studies", modal: "studies")
-                                CardView(title: "Community", headline: "Connect", description: "Connect with other people experiencing long term COVID-19 symptoms", button: "Open Chat", modal: "threads")
-                            }
-                        }
-                    }
-                }
+          
                 resources.headerView.titleLabel.text = "Resources"
                 resources.headerView.detailLabel.text = "Add in cards for clinical studies, community, and points..."
-                //tipView2.imageView.image = UIImage(named: "GraphicOperatingSystem")
                 listViewController.appendView(resources, animated: false)
+            
+                let video = TipView()
+                struct CardView: View {
+                    var body: some View {
+                        Text("Hello, World!")
+                    }
+                }
+
+                struct CardView_Previews: PreviewProvider {
+                    static var previews: some View {
+                        CardView()
+                    }
+                }
+                video.headerView.titleLabel.text = "Educational Videos"
+                video.headerView.detailLabel.text =
+                   "https://www.youtube.com/watch?v=DCdxsnRF1Fk"
+                listViewController.appendView(video, animated: false)
+                
+               // resources.cardView("hello")
+                //tipView2.imageView.image = UIImage(named: "GraphicOperatingSystem")
+               
                 
     
                     
@@ -152,6 +158,22 @@ class ScheduleViewController: OCKDailyPageViewController {
                                                                     storeManager: self.storeManager)
                     listViewController.appendViewController(nauseaCard, animated: false)
                 }
+             
+             var body: some View {
+                 VStack {
+                     Text("Resources").font(.system(size: 25, weight:.bold)).padding(5)
+                     Text("Frequently Updated")
+                         .font(.caption)
+                         .padding(.top, 5)
+                     ScrollView {
+                         VStack {
+                             CardView(title: "Points", headline: "Incentives", description: "Redeem participation points for rewards like gift cards, badges and more.", button: "View My Rewards", modal: "memes")
+                             CardView(title: "Clinical Studies", headline: "Research", description: "Learn about clinical studies for patients having long term symptoms of COVID-19", button: "View Studies", modal: "studies")
+                             CardView(title: "Community", headline: "Connect", description: "Connect with other people experiencing long term COVID-19 symptoms", button: "Open Chat", modal: "threads")
+                         }
+                     }
+                 }
+             }
  */
             }
         }
