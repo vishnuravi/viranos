@@ -24,7 +24,7 @@ struct MainUIView: View {
             
             if useCareKit {
                 ScheduleViewControllerRepresentable().tabItem {
-                    Image("tab_schedule").renderingMode(.template)
+                    Image("home").renderingMode(.template)
                     Text("Home")
                 }
                 
