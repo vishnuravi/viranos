@@ -32,7 +32,7 @@ class ScheduleViewController: OCKDailyPageViewController {
 
                 // Add a non-CareKit view into the list
                 let tipTitle = "Hi Ashley!"
-                let tipText = "Below are your upcoming surveys. You can also access resources for clinical trials and connect with others."
+                let tipText = "Thank you for joining! For many people, symptoms of COVID-19 can last for long after the initial infection. This is called long COVID-19. Get started by telling us about any symptoms you might be experiencing in the surveys below. You can also access resources and connect with others."
 
                
                 
@@ -41,7 +41,7 @@ class ScheduleViewController: OCKDailyPageViewController {
                     let tipView = TipView()
                     tipView.headerView.titleLabel.text = tipTitle
                     tipView.headerView.detailLabel.text = tipText
-                    tipView.imageView.image = UIImage(named: "GraphicOperatingSystem")
+                    tipView.imageView.image = UIImage(named: "covid")
                     listViewController.appendView(tipView, animated: false)
                 }
 

@@ -98,7 +98,7 @@ class TipView: OCKView, OCKCardable {
     }
 
     func scaledImageHeight(compatibleWith traitCollection: UITraitCollection) -> CGFloat {
-        return UIFontMetrics.default.scaledValue(for: 200, compatibleWith: traitCollection)
+        return UIFontMetrics.default.scaledValue(for: 300, compatibleWith: traitCollection)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
