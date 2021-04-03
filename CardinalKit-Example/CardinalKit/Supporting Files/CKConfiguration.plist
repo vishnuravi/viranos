@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Study Title</key>
-	<string>Long-term COVID-19 Platform</string>
+	<string>Long COVID-19 Platform</string>
 	<key>Team Name</key>
 	<string> </string>
 	<key>Email</key>
@@ -92,7 +92,7 @@
 		<key>Overview</key>
 		<dict>
 			<key>Title</key>
-			<string>Hi there! 👋🏽</string>
+			<string>Hi there! </string>
 			<key>Summary</key>
 			<string>This platform was developed to help COVID-19 patients monitor their health following diagnosis while also providing researchers and clinicians the tools to improve the understanding of long-term physical and psychosocial effects of the disease.</string>
 			<key>Content</key>
@@ -103,9 +103,9 @@
 			<key>Title</key>
 			<string>Data Gathering</string>
 			<key>Summary</key>
-			<string>The platform only collects information that you provide via in-app tasks and surveys. Examples of collected information include information that you share in your user profile, answers on symptom surveys, and results of memory task performance.</string>
+			<string>The platform only collects information that you provide via in-app surveys. Examples of collected information include information that you share in your user profile and answers on symptom surveys.</string>
 			<key>Content</key>
-			<string>The platform only collects information that you provide via in-app tasks and surveys. Examples of collected information include information that you share in your user profile, answers on symptom surveys, and results of memory task performance.</string>
+			<string>The platform only collects information that you provide via in-app surveys. Examples of collected information include information that you share in your user profile and answers on symptom surveys.</string>
 		</dict>
 		<key>Privacy</key>
 		<dict>
@@ -167,7 +167,7 @@
 			<key>Title</key>
 			<string>Contribute data for research</string>
 			<key>Description</key>
-			<string>Little is known about the long-term implications of COVID-19. You can contribute your data to help researchers understand the long-term physical and psychosocial effects.</string>
+			<string>Little is known about the long-term implications of COVID-19. You can contribute your data to help researchers understand the ongoing  physical and psychosocial effects.</string>
 			<key>Logo</key>
 			<string>🦠</string>
 		</dict>
