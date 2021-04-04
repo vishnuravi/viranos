@@ -13,6 +13,7 @@
 		7785F60825C0646700234D6F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		77E07AAF261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E07AAE261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift */; };
 		77E07AB1261A7C4D006A7986 /* SymptomSurveyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E07AB0261A7C4D006A7986 /* SymptomSurveyItemViewController.swift */; };
+		77E07AD4261A8558006A7986 /* CKConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2F1FD7724D62064006C39DF /* CKConfiguration.plist */; };
 		8E0A43AC244A4A0400656518 /* CKStudyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4382244A4A0400656518 /* CKStudyUser.swift */; };
 		8E0A43AD244A4A0400656518 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4384244A4A0400656518 /* Constants.swift */; };
 		8E0A43AE244A4A0400656518 /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4386244A4A0400656518 /* ORKESerialization.m */; };
@@ -562,6 +563,7 @@
 			files = (
 				8E0A43AF244A4A0400656518 /* Assets.xcassets in Resources */,
 				8E0A43B0244A4A0400656518 /* LaunchScreen.storyboard in Resources */,
+				77E07AD4261A8558006A7986 /* CKConfiguration.plist in Resources */,
 				8E0A43C1244A4A0400656518 /* LoginCustomWaitStepView.xib in Resources */,
 				E290FB1D24FF4BBA00D19BE9 /* GoogleService-Info.plist in Resources */,
 			);
