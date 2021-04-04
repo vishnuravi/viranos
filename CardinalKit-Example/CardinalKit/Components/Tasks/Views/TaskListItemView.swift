@@ -39,4 +39,10 @@ struct TaskListItemView: View {
         })
     }
 }
+
+struct TaskListItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        TaskListItemView(item: .sampleCoreMotionAppleWatch)
+    }
+}
 */

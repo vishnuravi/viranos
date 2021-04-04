@@ -13,7 +13,6 @@ import CareKitUI
 import CareKitStore
 
 // 1. Subclass a task view controller to customize the control flow and present a ResearchKit survey!
-
 class SurveyItemViewController: OCKInstructionsTaskViewController, ORKTaskViewControllerDelegate {
 
     // 2. This method is called when the use taps the button!

@@ -87,7 +87,7 @@ class TipView: OCKView, OCKCardable {
             blurView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             blurView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             blurView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            blurView.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 8),
+            blurView.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 16),
 
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -98,7 +98,7 @@ class TipView: OCKView, OCKCardable {
     }
 
     func scaledImageHeight(compatibleWith traitCollection: UITraitCollection) -> CGFloat {
-        return UIFontMetrics.default.scaledValue(for: 350, compatibleWith: traitCollection)
+        return UIFontMetrics.default.scaledValue(for: 200, compatibleWith: traitCollection)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
