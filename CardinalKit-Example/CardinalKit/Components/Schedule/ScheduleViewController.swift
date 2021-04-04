@@ -71,23 +71,34 @@ class ScheduleViewController: OCKDailyPageViewController {
           
                 resources.headerView.titleLabel.text = "Resources"
                 resources.headerView.detailLabel.text = "Add in cards for clinical studies, community, and points..."
+               // resources.contentView(
+                   // Text("Hi")
+                //}
                 listViewController.appendView(resources, animated: false)
             
-                let video = TipView()
-                struct CardView: View {
-                    var body: some View {
-                        Text("Hello, World!")
-                    }
-                }
+            let video = TipView()
+               // struct CardView: View {
+                //    var body: some View {
+                 //       Text("Hello, World!")
+                  //  }
+              //  }
+                
 
-                struct CardView_Previews: PreviewProvider {
-                    static var previews: some View {
-                        CardView()
-                    }
-                }
+
+              //  struct CardView_Previews: PreviewProvider {
+               //     static var previews: some View {
+                //    CardView()
+                //}
+            //}
+                
+                
+
                 video.headerView.titleLabel.text = "Educational Videos"
                 video.headerView.detailLabel.text =
                    "https://www.youtube.com/watch?v=DCdxsnRF1Fk"
+                
+                //video.cardView("hello")
+    
                 listViewController.appendView(video, animated: false)
                 
                // resources.cardView("hello")
