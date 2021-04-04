@@ -72,12 +72,6 @@ static NSString *const kCustomUrlSchemePrefix = @"app-";
       @brief The callback URL scheme used for headful-lite sign-in.
    */
   NSString *_callbackScheme;
-
-  /** @var _usingClientIDScheme
-      @brief True if the reverse client ID is registered as a custom URL scheme, and false
-     otherwise.
-   */
-  BOOL _usingClientIDScheme;
 }
 
 + (FIROAuthCredential *)credentialWithProviderID:(NSString *)providerID
@@ -222,16 +216,9 @@ static NSString *const kCustomUrlSchemePrefix = @"app-";
     _auth = auth;
     _providerID = providerID;
     if (_auth.app.options.clientID) {
-      NSString *reverseClientIDScheme =
-          [[[_auth.app.options.clientID componentsSeparatedByString:@"."]
-               reverseObjectEnumerator].allObjects componentsJoinedByString:@"."];
-      if ([FIRAuthWebUtils isCallbackSchemeRegisteredForCustomURLScheme:reverseClientIDScheme]) {
-        _callbackScheme = reverseClientIDScheme;
-        _usingClientIDScheme = YES;
-      }
-    }
-
-    if (!_usingClientIDScheme) {
+      _callbackScheme = [[[_auth.app.options.clientID componentsSeparatedByString:@"."]
+                             reverseObjectEnumerator].allObjects componentsJoinedByString:@"."];
+    } else {
       _callbackScheme = [kCustomUrlSchemePrefix
           stringByAppendingString:[_auth.app.options.googleAppID
                                       stringByReplacingOccurrencesOfString:@":"
@@ -317,7 +304,7 @@ static NSString *const kCustomUrlSchemePrefix = @"app-";
                                        @"eventId" : eventID,
                                        @"providerId" : strongSelf->_providerID,
                                      } mutableCopy];
-                                     if (strongSelf->_usingClientIDScheme) {
+                                     if (clientID) {
                                        urlArguments[@"clientId"] = clientID;
                                      } else {
                                        urlArguments[@"appId"] = appID;

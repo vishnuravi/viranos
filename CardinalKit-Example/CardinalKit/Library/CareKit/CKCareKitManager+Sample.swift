@@ -126,3 +126,29 @@ internal extension OCKStore {
     
 }
 
+extension OCKHealthKitPassthroughStore {
+
+    internal func populateSampleData() {
+
+        let schedule = OCKSchedule.dailyAtTime(
+            hour: 8, minutes: 0, start: Date(), end: nil, text: nil,
+            duration: .hours(12), targetValues: [OCKOutcomeValue(2000.0, units: "Steps")])
+
+        let steps = OCKHealthKitTask(
+            id: "steps",
+            title: "Daily Steps Goal 🏃🏽‍♂️",
+            carePlanUUID: nil,
+            schedule: schedule,
+            healthKitLinkage: OCKHealthKitLinkage(
+                quantityIdentifier: .stepCount,
+                quantityType: .cumulative,
+                unit: .count()))
+
+        addTasks([steps]) { result in
+            switch result {
+            case .success: print("Added tasks into HealthKitPassthroughStore!")
+            case .failure(let error): print("Error: \(error)")
+            }
+        }
+    }
+}

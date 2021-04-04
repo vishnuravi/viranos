@@ -10,7 +10,10 @@
 		2F94C5F22536543600DF8866 /* SceneDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94C5F12536543600DF8866 /* SceneDelegate+CardinalKit.swift */; };
 		7785F60325C04D7F00234D6F /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785F60225C04D7F00234D6F /* ResourcesView.swift */; };
 		7785F60525C04F3200234D6F /* DashboardView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785F60425C04F3200234D6F /* DashboardView2.swift */; };
-		7785F60825C0646700234D6F /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7785F60725C0646700234D6F /* SwiftUICharts */; };
+		7785F60825C0646700234D6F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		77E07AAF261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E07AAE261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift */; };
+		77E07AB1261A7C4D006A7986 /* SymptomSurveyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E07AB0261A7C4D006A7986 /* SymptomSurveyItemViewController.swift */; };
+		77E07AD4261A8558006A7986 /* CKConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2F1FD7724D62064006C39DF /* CKConfiguration.plist */; };
 		8E0A43AC244A4A0400656518 /* CKStudyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4382244A4A0400656518 /* CKStudyUser.swift */; };
 		8E0A43AD244A4A0400656518 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4384244A4A0400656518 /* Constants.swift */; };
 		8E0A43AE244A4A0400656518 /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A4386244A4A0400656518 /* ORKESerialization.m */; };
@@ -68,16 +71,14 @@
 		8EA664892593213000B6A45A /* CKSendHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664882593213000B6A45A /* CKSendHelper.swift */; };
 		8EA664AD2593380D00B6A45A /* SendRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664AC2593380D00B6A45A /* SendRecordsView.swift */; };
 		8EA664B025941A4D00B6A45A /* SurveyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664AF25941A4D00B6A45A /* SurveyItemViewController.swift */; };
-		8EA664B2259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664B1259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift */; };
+		8EA664B2259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */; };
 		8EA664B42594387900B6A45A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664B32594387900B6A45A /* Errors.swift */; };
 		8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */; };
-		AB3FE26A26101477004FFB81 /* SymptomSurveyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3FE26926101477004FFB81 /* SymptomSurveyItemViewController.swift */; };
-		AB3FE28F26111EA8004FFB81 /* CKConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2F1FD7724D62064006C39DF /* CKConfiguration.plist */; };
 		D253D132250D1BDB00A363E4 /* CKSignInWithAppleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253D131250D1BDB00A363E4 /* CKSignInWithAppleStep.swift */; };
 		E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235077624F7082700CC1899 /* SceneDelegate.swift */; };
+		E2680B1B260A72DD00B755EA /* LoginExistingUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2680B1A260A72DD00B755EA /* LoginExistingUserViewController.swift */; };
 		E290FB1D24FF4BBA00D19BE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E290FB1C24FF4BBA00D19BE9 /* GoogleService-Info.plist */; };
 		E29143FC24E74AD100EE97B2 /* LaunchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29143FB24E74AD100EE97B2 /* LaunchUIView.swift */; };
-		E2CB7FE524F730C80039C24A /* CKConfiguration-old.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CB7FE424F730C80039C24A /* CKConfiguration-old.plist */; };
 		E2DF9F0A2500C9CE00A93B93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF9F092500C9CE00A93B93 /* LoginViewController.swift */; };
 		E2F1FD7624D61EDA006C39DF /* CKPropertyReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1FD7524D61EDA006C39DF /* CKPropertyReader.swift */; };
 /* End PBXBuildFile section */
@@ -107,6 +108,8 @@
 		630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7785F60225C04D7F00234D6F /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		7785F60425C04F3200234D6F /* DashboardView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView2.swift; sourceTree = "<group>"; };
+		77E07AAE261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKUploadToGCPTaskViewControllerDelegate.swift; sourceTree = "<group>"; };
+		77E07AB0261A7C4D006A7986 /* SymptomSurveyItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomSurveyItemViewController.swift; sourceTree = "<group>"; };
 		8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardinalKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E0A4382244A4A0400656518 /* CKStudyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKStudyUser.swift; sourceTree = "<group>"; };
 		8E0A4384244A4A0400656518 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -163,16 +166,15 @@
 		8EA664882593213000B6A45A /* CKSendHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKSendHelper.swift; sourceTree = "<group>"; };
 		8EA664AC2593380D00B6A45A /* SendRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRecordsView.swift; sourceTree = "<group>"; };
 		8EA664AF25941A4D00B6A45A /* SurveyItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyItemViewController.swift; sourceTree = "<group>"; };
-		8EA664B1259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitRemoteSynchronizable.swift; sourceTree = "<group>"; };
+		8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitRemoteSyncWithFirestore.swift; sourceTree = "<group>"; };
 		8EA664B32594387900B6A45A /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
-		AB3FE26926101477004FFB81 /* SymptomSurveyItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomSurveyItemViewController.swift; sourceTree = "<group>"; };
 		CB97C14C759E56B88E4E3941 /* Pods_CardinalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D253D131250D1BDB00A363E4 /* CKSignInWithAppleStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKSignInWithAppleStep.swift; sourceTree = "<group>"; };
 		E235077624F7082700CC1899 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E2680B1A260A72DD00B755EA /* LoginExistingUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginExistingUserViewController.swift; sourceTree = "<group>"; };
 		E290FB1C24FF4BBA00D19BE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E29143FB24E74AD100EE97B2 /* LaunchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUIView.swift; sourceTree = "<group>"; };
-		E2CB7FE424F730C80039C24A /* CKConfiguration-old.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CKConfiguration-old.plist"; sourceTree = "<group>"; };
 		E2DF9F092500C9CE00A93B93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E2F1FD7524D61EDA006C39DF /* CKPropertyReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKPropertyReader.swift; sourceTree = "<group>"; };
 		E2F1FD7724D62064006C39DF /* CKConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CKConfiguration.plist; sourceTree = "<group>"; };
@@ -185,7 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9CDE952591534B00C8A228 /* CareKit in Frameworks */,
-				7785F60825C0646700234D6F /* SwiftUICharts in Frameworks */,
+				7785F60825C0646700234D6F /* (null) in Frameworks */,
 				8E0A43CE244A60D800656518 /* Pods_CardinalKit_Example.framework in Frameworks */,
 				8E9CDE972591534B00C8A228 /* CareKitUI in Frameworks */,
 				8E0A43D5244A693D00656518 /* HealthKit.framework in Frameworks */,
@@ -281,7 +283,6 @@
 				8E0A43C9244A4C6500656518 /* Info.plist */,
 				E290FB1C24FF4BBA00D19BE9 /* GoogleService-Info.plist */,
 				E2F1FD7724D62064006C39DF /* CKConfiguration.plist */,
-				E2CB7FE424F730C80039C24A /* CKConfiguration-old.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -293,7 +294,6 @@
 				8E6E1E2F25353A550024B8DF /* Views */,
 				8E6E1E25253537E40024B8DF /* TasksUIView.swift */,
 				8E0A4391244A4A0400656518 /* DashboardUIView.swift */,
-				8E6E1E172535263F0024B8DF /* CKTaskViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -307,6 +307,7 @@
 				8E6E1E0A2534FF640024B8DF /* OnboardingViewController+Coordinator.swift */,
 				8E6E1E0C25351D8F0024B8DF /* PageViewController.swift */,
 				8E6E1E13253520440024B8DF /* PasscodeViewController.swift */,
+				E2680B1A260A72DD00B755EA /* LoginExistingUserViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -415,7 +416,7 @@
 			children = (
 				8E9CDEAC259170AD00C8A228 /* CKCareKitManager.swift */,
 				8E9CDEAE259172C200C8A228 /* CKCareKitManager+Sample.swift */,
-				8EA664B1259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift */,
+				8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */,
 			);
 			path = CareKit;
 			sourceTree = "<group>";
@@ -425,7 +426,7 @@
 			children = (
 				8E9CDEB12591739A00C8A228 /* TipView.swift */,
 				8EA664AF25941A4D00B6A45A /* SurveyItemViewController.swift */,
-				AB3FE26926101477004FFB81 /* SymptomSurveyItemViewController.swift */,
+				77E07AB0261A7C4D006A7986 /* SymptomSurveyItemViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -469,7 +470,9 @@
 			children = (
 				8E0A4386244A4A0400656518 /* ORKESerialization.m */,
 				8E0A4387244A4A0400656518 /* ORKESerialization.h */,
+				77E07AAE261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift */,
 				8E0A43A2244A4A0400656518 /* ConsentDocument.swift */,
+				8E6E1E172535263F0024B8DF /* CKTaskViewController.swift */,
 			);
 			path = ResearchKit;
 			sourceTree = "<group>";
@@ -509,7 +512,6 @@
 				8E9CDE922591534B00C8A228 /* CareKitFHIR */,
 				8E9CDE942591534B00C8A228 /* CareKit */,
 				8E9CDE962591534B00C8A228 /* CareKitUI */,
-				7785F60725C0646700234D6F /* SwiftUICharts */,
 			);
 			productName = CardinalKit;
 			productReference = 607FACD01AFB9204008FA782 /* CardinalKit Example.app */;
@@ -544,7 +546,6 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
 				8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */,
-				7785F60625C0646700234D6F /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -562,9 +563,8 @@
 			files = (
 				8E0A43AF244A4A0400656518 /* Assets.xcassets in Resources */,
 				8E0A43B0244A4A0400656518 /* LaunchScreen.storyboard in Resources */,
+				77E07AD4261A8558006A7986 /* CKConfiguration.plist in Resources */,
 				8E0A43C1244A4A0400656518 /* LoginCustomWaitStepView.xib in Resources */,
-				AB3FE28F26111EA8004FFB81 /* CKConfiguration.plist in Resources */,
-				E2CB7FE524F730C80039C24A /* CKConfiguration-old.plist in Resources */,
 				E290FB1D24FF4BBA00D19BE9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,12 +674,13 @@
 				E29143FC24E74AD100EE97B2 /* LaunchUIView.swift in Sources */,
 				8EA6648725930B6B00B6A45A /* CKHealthRecordsStepViewController.swift in Sources */,
 				8E0A43C0244A4A0400656518 /* PasswordlessLoginStep.swift in Sources */,
-				8EA664B2259422E400B6A45A /* CKCareKitRemoteSynchronizable.swift in Sources */,
+				8EA664B2259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift in Sources */,
 				8EA664AD2593380D00B6A45A /* SendRecordsView.swift in Sources */,
 				8E6E1E28253538CC0024B8DF /* TaskListItemView.swift in Sources */,
 				8E0A43B3244A4A0400656518 /* TaskSamples.swift in Sources */,
 				8E6E1E2225352C780024B8DF /* OnboardingUIView.swift in Sources */,
 				8E6E1E1A253528450024B8DF /* WithdrawView.swift in Sources */,
+				77E07AB1261A7C4D006A7986 /* SymptomSurveyItemViewController.swift in Sources */,
 				8E6E1E2E25353A1E0024B8DF /* PatientIDView.swift in Sources */,
 				8E6E1E0B2534FF640024B8DF /* OnboardingViewController+Coordinator.swift in Sources */,
 				8E40DC042471E5940027536B /* CKNetworkManager.swift in Sources */,
@@ -715,10 +716,10 @@
 				D253D132250D1BDB00A363E4 /* CKSignInWithAppleStep.swift in Sources */,
 				8E6E1E0D25351D8F0024B8DF /* PageViewController.swift in Sources */,
 				8E0A43AC244A4A0400656518 /* CKStudyUser.swift in Sources */,
+				77E07AAF261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */,
 				8E0A43C3244A4A0400656518 /* LoginCustomWaitStepViewController.swift in Sources */,
 				8E9CDEB22591739A00C8A228 /* TipView.swift in Sources */,
 				E2F1FD7624D61EDA006C39DF /* CKPropertyReader.swift in Sources */,
-				AB3FE26A26101477004FFB81 /* SymptomSurveyItemViewController.swift in Sources */,
 				8E6E1E1025351E890024B8DF /* Extensions+UIColor.swift in Sources */,
 				7785F60325C04D7F00234D6F /* ResourcesView.swift in Sources */,
 				8E9CDF832592844A00C8A228 /* LearnUIView.swift in Sources */,
@@ -727,6 +728,7 @@
 				8E6E1E16253524500024B8DF /* WithdrawalViewController.swift in Sources */,
 				8E6E1E2A2535398D0024B8DF /* HelpView.swift in Sources */,
 				7785F60525C04F3200234D6F /* DashboardView2.swift in Sources */,
+				E2680B1B260A72DD00B755EA /* LoginExistingUserViewController.swift in Sources */,
 				8E9CDED02591AC4A00C8A228 /* CKHealthKitManager.swift in Sources */,
 				8E0A43C2244A4A0400656518 /* ConsentDocument.swift in Sources */,
 			);
@@ -853,7 +855,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "CardinalKit-Example.entitlements";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -861,7 +863,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cardinalkit;
 				PRODUCT_NAME = "CardinalKit Example";
@@ -879,7 +881,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "CardinalKit-Example.entitlements";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -887,7 +889,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cardinalkit;
 				PRODUCT_NAME = "CardinalKit Example";
@@ -921,14 +923,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7785F60625C0646700234D6F /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.4;
-			};
-		};
 		8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
@@ -940,11 +934,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7785F60725C0646700234D6F /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7785F60625C0646700234D6F /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
-		};
 		8E9CDE902591534B00C8A228 /* CareKitStore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */;

@@ -11,7 +11,7 @@ import CareKitStore
 
 class CKCareKitManager: NSObject {
     
-    let coreDataStore = OCKStore(name: "CKCareKitStore", type: .onDisk, remote: CKCareKitRemoteSynchronizable())
+    let coreDataStore = OCKStore(name: "CKCareKitStore", type: .onDisk, remote: CKCareKitRemoteSyncWithFirestore())
     let healthKitStore = OCKHealthKitPassthroughStore(name: "CKCareKitHealthKitStore", type: .onDisk)
     private(set) var synchronizedStoreManager: OCKSynchronizedStoreManager!
     
@@ -36,7 +36,7 @@ class CKCareKitManager: NSObject {
     fileprivate func initStore(forceUpdate: Bool = false) {
         if forceUpdate || UserDefaults.standard.object(forKey: Constants.prefCareKitCoreDataInitDate) == nil {
             coreDataStore.populateSampleData()
-           // healthKitStore.populateSampleData()
+            healthKitStore.populateSampleData()
             
             UserDefaults.standard.set(Date(), forKey: Constants.prefCareKitCoreDataInitDate)
         }
