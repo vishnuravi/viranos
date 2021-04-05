@@ -27,11 +27,6 @@ struct MainUIView: View {
                     Image("home").renderingMode(.template)
                     Text("Home")
                 }
-                
-//                CareTeamViewControllerRepresentable().tabItem {
-//                    Image("tab_activities").renderingMode(.template)
-//                    Text("Contact")
-//                }
             }
             
             DashboardUIView().tabItem {
@@ -43,7 +38,7 @@ struct MainUIView: View {
                 Image("tab_care").renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                 Text("Resources")
             }
-
+            
             ProfileUIView(color: self.color).tabItem {
                 Image("tab_profile").renderingMode(.template)
                 Text("Profile")

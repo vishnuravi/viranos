@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2F94C5F22536543600DF8866 /* SceneDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94C5F12536543600DF8866 /* SceneDelegate+CardinalKit.swift */; };
+		775F96BA261AB29100593E2C /* FASwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 775F96B9261AB29100593E2C /* FASwiftUI */; };
 		7785F60825C0646700234D6F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		77A9E3B1261A89B000EB5FEE /* ResourcesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E3B0261A89B000EB5FEE /* ResourcesUIView.swift */; };
 		77A9E3B4261A903100EB5FEE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 77A9E3B3261A903100EB5FEE /* SwiftUICharts */; };
+		77BBA8D3261B5DD2001750AA /* StudiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA8D2261B5DD2001750AA /* StudiesView.swift */; };
+		77BBA8D5261B5DEF001750AA /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA8D4261B5DEF001750AA /* ConnectView.swift */; };
+		77BBA8D7261B5E22001750AA /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA8D6261B5E22001750AA /* BadgeView.swift */; };
 		77E07AAF261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E07AAE261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift */; };
 		77E07AB1261A7C4D006A7986 /* SymptomSurveyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E07AB0261A7C4D006A7986 /* SymptomSurveyItemViewController.swift */; };
 		77E07AD4261A8558006A7986 /* CKConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2F1FD7724D62064006C39DF /* CKConfiguration.plist */; };
@@ -107,6 +111,9 @@
 		62AA5CD1C2188D392530510F /* CardinalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardinalKit.podspec; path = ../CardinalKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		77A9E3B0261A89B000EB5FEE /* ResourcesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesUIView.swift; sourceTree = "<group>"; };
+		77BBA8D2261B5DD2001750AA /* StudiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesView.swift; sourceTree = "<group>"; };
+		77BBA8D4261B5DEF001750AA /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		77BBA8D6261B5E22001750AA /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		77E07AAE261A7BBA006A7986 /* CKUploadToGCPTaskViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKUploadToGCPTaskViewControllerDelegate.swift; sourceTree = "<group>"; };
 		77E07AB0261A7C4D006A7986 /* SymptomSurveyItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomSurveyItemViewController.swift; sourceTree = "<group>"; };
 		8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardinalKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -193,6 +200,7 @@
 				77A9E3B4261A903100EB5FEE /* SwiftUICharts in Frameworks */,
 				8E9CDE912591534B00C8A228 /* CareKitStore in Frameworks */,
 				8E9CDE932591534B00C8A228 /* CareKitFHIR in Frameworks */,
+				775F96BA261AB29100593E2C /* FASwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +260,17 @@
 				07D78DA16FC9C3C7709EA243 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		77BBA8D1261B5DC4001750AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77A9E3B0261A89B000EB5FEE /* ResourcesUIView.swift */,
+				77BBA8D2261B5DD2001750AA /* StudiesView.swift */,
+				77BBA8D4261B5DEF001750AA /* ConnectView.swift */,
+				77BBA8D6261B5E22001750AA /* BadgeView.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8E0A4379244A4A0400656518 /* Profile */ = {
@@ -400,7 +419,7 @@
 				8E6E1E23253537580024B8DF /* MainUIView.swift */,
 				E29143FB24E74AD100EE97B2 /* LaunchUIView.swift */,
 				8E0A4391244A4A0400656518 /* DashboardUIView.swift */,
-				77A9E3B0261A89B000EB5FEE /* ResourcesUIView.swift */,
+				77BBA8D1261B5DC4001750AA /* Resources */,
 				8E0A4399244A4A0400656518 /* Onboarding */,
 				8E9CDEA525915F6600C8A228 /* Schedule */,
 				8E9CDEB42591818200C8A228 /* Care Team */,
@@ -512,6 +531,7 @@
 				8E9CDE942591534B00C8A228 /* CareKit */,
 				8E9CDE962591534B00C8A228 /* CareKitUI */,
 				77A9E3B3261A903100EB5FEE /* SwiftUICharts */,
+				775F96B9261AB29100593E2C /* FASwiftUI */,
 			);
 			productName = CardinalKit;
 			productReference = 607FACD01AFB9204008FA782 /* CardinalKit Example.app */;
@@ -547,6 +567,7 @@
 			packageReferences = (
 				8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */,
 				77A9E3B2261A903100EB5FEE /* XCRemoteSwiftPackageReference "ChartView" */,
+				775F96B8261AB29100593E2C /* XCRemoteSwiftPackageReference "FASwiftUI" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -682,6 +703,8 @@
 				8E6E1E2225352C780024B8DF /* OnboardingUIView.swift in Sources */,
 				8E6E1E1A253528450024B8DF /* WithdrawView.swift in Sources */,
 				77E07AB1261A7C4D006A7986 /* SymptomSurveyItemViewController.swift in Sources */,
+				77BBA8D7261B5E22001750AA /* BadgeView.swift in Sources */,
+				77BBA8D3261B5DD2001750AA /* StudiesView.swift in Sources */,
 				8E6E1E2E25353A1E0024B8DF /* PatientIDView.swift in Sources */,
 				8E6E1E0B2534FF640024B8DF /* OnboardingViewController+Coordinator.swift in Sources */,
 				8E40DC042471E5940027536B /* CKNetworkManager.swift in Sources */,
@@ -726,6 +749,7 @@
 				8E9CDF832592844A00C8A228 /* LearnUIView.swift in Sources */,
 				8E9CDEA725916B2800C8A228 /* ScheduleViewControllerRepresentable.swift in Sources */,
 				E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */,
+				77BBA8D5261B5DEF001750AA /* ConnectView.swift in Sources */,
 				8E6E1E16253524500024B8DF /* WithdrawalViewController.swift in Sources */,
 				8E6E1E2A2535398D0024B8DF /* HelpView.swift in Sources */,
 				E2680B1B260A72DD00B755EA /* LoginExistingUserViewController.swift in Sources */,
@@ -923,6 +947,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		775F96B8261AB29100593E2C /* XCRemoteSwiftPackageReference "FASwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattmaddux/FASwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 		77A9E3B2261A903100EB5FEE /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView";
@@ -942,6 +974,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		775F96B9261AB29100593E2C /* FASwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 775F96B8261AB29100593E2C /* XCRemoteSwiftPackageReference "FASwiftUI" */;
+			productName = FASwiftUI;
+		};
 		77A9E3B3261A903100EB5FEE /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 77A9E3B2261A903100EB5FEE /* XCRemoteSwiftPackageReference "ChartView" */;
