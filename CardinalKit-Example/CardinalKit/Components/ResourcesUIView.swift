@@ -3,15 +3,14 @@
 //  CardinalKit_Example
 //
 //  Created by Vishnu Ravi on 9/12/20.
-//  Copyright © 2020 Viranos. All rights reserved.
+//  Copyright © 2020 CocoaPods. All rights reserved.
 //
-
 import SwiftUI
 
-struct ResourcesView: View {
+struct ResourcesUIView: View {
     var body: some View {
         VStack {
-            Text("Resources").font(.system(size: 25, weight:.bold)).padding(5)
+            Text("Resources").font(.system(size: 25, weight:.bold))
             Text("Frequently Updated")
                 .font(.caption)
                 .padding(.top, 5)
@@ -30,7 +29,11 @@ struct MemeView: View {
     var body: some View {
         VStack {
             Text("Badges You've Earned").font(.title)
-            Image("taylor_hero_badge")
+                .padding(.bottom, 10)
+            Image("hercules_meme")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.bottom, 10)
             Text("Keep doing activities daily to unlock more badges and rewards!").font(.caption)
         }
     }
@@ -91,10 +94,6 @@ struct CardView: View {
     
     var body: some View {
         VStack {
-            //            Image("swiftui-button")
-            //                .resizable()
-            //                .aspectRatio(contentMode: .fit)
-            
             HStack {
                 VStack(alignment: .leading) {
                     Text(headline)
@@ -110,18 +109,18 @@ struct CardView: View {
                         .foregroundColor(.secondary)
                     
                     if(self.modal == "threads"){
-                    Button(action: {
-                        self.showingThreads.toggle()
-                    }){
-                        Text(button)
-                            .padding(10)
-                            .font(.system(size: 12, weight: .bold, design: .default))
-                            .foregroundColor(.white).background(Color(config.readColor(query: "Primary Color")))
-                            .cornerRadius(10)
-                    }.padding(.top, 10)
-                    .sheet(isPresented: $showingThreads) {
-                        ThreadView(color: Color(self.config.readColor(query: "Primary Color")))
-                    }
+                        Button(action: {
+                            self.showingThreads.toggle()
+                        }){
+                            Text(button)
+                                .padding(10)
+                                .font(.system(size: 12, weight: .bold, design: .default))
+                                .foregroundColor(.white).background(Color(config.readColor(query: "Primary Color")))
+                                .cornerRadius(10)
+                        }.padding(.top, 10)
+                        .sheet(isPresented: $showingThreads) {
+                            ThreadView(color: Color(self.config.readColor(query: "Primary Color")))
+                        }
                     } else if(self.modal == "memes") {
                         Button(action: {
                             self.showingMemes.toggle()
@@ -158,13 +157,12 @@ struct CardView: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 3)
         )
-            .padding([.top, .horizontal])
+        .padding([.top, .horizontal])
     }
 }
 
-struct ResourcesView_Previews: PreviewProvider {
+struct ResourcesUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ResourcesView()
+        ResourcesUIView()
     }
 }
-

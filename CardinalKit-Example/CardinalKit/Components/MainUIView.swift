@@ -28,15 +28,20 @@ struct MainUIView: View {
                     Text("Home")
                 }
                 
-                DashboardUIView().tabItem {
-                    Image("tab_dashboard").renderingMode(.template)
-                    Text("Dashboard")
-                }
-                
-                CareTeamViewControllerRepresentable().tabItem {
-                    Image("tab_activities").renderingMode(.template)
-                    Text("Contact")
-                }
+//                CareTeamViewControllerRepresentable().tabItem {
+//                    Image("tab_activities").renderingMode(.template)
+//                    Text("Contact")
+//                }
+            }
+            
+            DashboardUIView().tabItem {
+                Image("tab_dashboard").renderingMode(.template)
+                Text("Dashboard")
+            }
+            
+            ResourcesUIView().tabItem {
+                Image("tab_care").renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+                Text("Resources")
             }
 
             ProfileUIView(color: self.color).tabItem {
