@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -13,17 +13,29 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ViranosLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-Gy-c9g">
-                                <rect key="frame" x="20" y="373" width="374" height="150"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-Gy-c9g">
+                                <rect key="frame" x="20" y="331" width="335" height="150"/>
                                 <color key="backgroundColor" red="0.086278595030000002" green="0.01181641221" blue="0.44700020550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="5xE-uK-f9c"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viranos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-HJ-hYQ">
+                                <rect key="frame" x="103" y="531" width="169" height="68.666666666666629"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A platform for Long COVID support" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHI-Y6-xAn">
+                                <rect key="frame" x="28" y="629.66666666666663" width="319" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.090200819079999994" green="0.0078944349659999993" blue="0.44700026510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,8 +44,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kYd-Gy-c9g" secondAttribute="trailing" constant="20" id="ChU-Ez-e4W"/>
                             <constraint firstItem="kYd-Gy-c9g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CtZ-8l-0wb"/>
                             <constraint firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="DbT-u1-Nld"/>
+                            <constraint firstItem="zHI-Y6-xAn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ai9-2H-hmr"/>
                             <constraint firstItem="kYd-Gy-c9g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bp7-Bg-3EK"/>
                             <constraint firstItem="kYd-Gy-c9g" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="krx-oK-OSg"/>
+                            <constraint firstItem="VVD-HJ-hYQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pjn-z7-QuW"/>
+                            <constraint firstItem="VVD-HJ-hYQ" firstAttribute="top" secondItem="kYd-Gy-c9g" secondAttribute="bottom" constant="50" id="rWq-W8-DAc"/>
+                            <constraint firstItem="zHI-Y6-xAn" firstAttribute="top" secondItem="VVD-HJ-hYQ" secondAttribute="bottom" constant="30" id="vRc-Fk-X3D"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,6 +59,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ViranosLogo" width="236" height="99.5"/>
+        <image name="bug" width="426" height="426.66665649414062"/>
     </resources>
 </document>
