@@ -16,10 +16,10 @@ struct DashboardUIView: View {
     let config = CKConfig.shared
     
     // sample data for demo
-    let physicalData: [Double] = [39,47,42,43,45,42,47,43,49]
-    let mentalData: [Double] = [35,35,40,35,45,42,43,43,42]
-    let stepData: [Double] = [2320,4142,4450,3640,4640,3230,3120,4321,4214]
-    let sleepData: [Double] = [7,7,8,6,8,7,5,7,8]
+    let physicalData: [Double] = [35, 38, 54, 64, 68, 63, 65]
+    let mentalData: [Double] = [52, 60, 61, 61, 63, 65, 67]
+    let stepData: [Double] = [2320, 4142, 4450, 3640, 4640, 3230, 3120, 4321, 4214]
+    let sleepData: [Double] = [7, 7, 8, 6, 8, 7, 5, 7, 8]
     
     // full screen charts
     @State var showFullPhysicalChart = false
