@@ -15,8 +15,19 @@ struct StudiesView: View {
                 .font(.title)
                 .fontWeight(.black)
                 .padding(.bottom, 10)
-            Text("No clinical studies available at the moment, please check back later.").font(.subheadline)
+            
+            Divider()
+            
+            Text("Hey!")
+                .font(.title)
+                .fontWeight(.light)
+                .padding(.bottom, 10)
+            Text("We don't have any studies for you to join at the moment, but please keep checking - we'll update this page as soon as there are.")
+                .font(.headline)
+                .fontWeight(.light)
+            
             Spacer()
+        
         }.padding(.all, 20)
     }
 }
