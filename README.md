@@ -1,8 +1,8 @@
-<img src="https://user-images.githubusercontent.com/1212163/113707563-140ffc80-96ae-11eb-9339-1d1297c9d21d.png" width="150">
+![image](https://user-images.githubusercontent.com/1212163/116002217-a2e5aa00-a5c6-11eb-87e9-1c71a5cdaa90.png)
 
 # Viranos
 
-An open-source platform to support Long COVID research including an iOS app and a [clinician & researcher dashboard](https://github.com/vishnuravi/viranos-dashboard).
+Up to 30% of people infected with COVID-19 have reported persistent symptoms more than 3 weeks after diagnosis. Long term effects of COVID-19 are still not well understood. Viranos is an open-source platform to support Long COVID research including an iOS app and a [clinician & researcher dashboard](https://github.com/vishnuravi/viranos-dashboard).
 
 ## About
 
@@ -27,3 +27,8 @@ Features:
 - HealthKit
 - CareKit
 - Google Cloud Platform
+
+## Lead Contributors
+
+- Ashley Griffin (@griffinac)
+- Vishnu Ravi (@vishnuravi)
