@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0584E493482787442DEAC676 /* Pods_CardinalKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CBE781E449E63155FB7B15 /* Pods_CardinalKit_Example.framework */; };
 		2F94C5F22536543600DF8866 /* SceneDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94C5F12536543600DF8866 /* SceneDelegate+CardinalKit.swift */; };
-		775F96BA261AB29100593E2C /* FASwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 775F96B9261AB29100593E2C /* FASwiftUI */; };
-		7785F60825C0646700234D6F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		775F96BA261AB29100593E2C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 775F96B9261AB29100593E2C /* SwiftPackageProductDependency */; };
 		77A9E3B1261A89B000EB5FEE /* ResourcesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A9E3B0261A89B000EB5FEE /* ResourcesUIView.swift */; };
-		77A9E3B4261A903100EB5FEE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 77A9E3B3261A903100EB5FEE /* SwiftUICharts */; };
+		77A9E3B4261A903100EB5FEE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 77A9E3B3261A903100EB5FEE /* SwiftPackageProductDependency */; };
 		77BBA8D3261B5DD2001750AA /* StudiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA8D2261B5DD2001750AA /* StudiesView.swift */; };
 		77BBA8D5261B5DEF001750AA /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA8D4261B5DEF001750AA /* ConnectView.swift */; };
 		77BBA8D7261B5E22001750AA /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA8D6261B5E22001750AA /* BadgeView.swift */; };
@@ -31,7 +31,6 @@
 		8E0A43C1244A4A0400656518 /* LoginCustomWaitStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A43A1244A4A0400656518 /* LoginCustomWaitStepView.xib */; };
 		8E0A43C2244A4A0400656518 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A43A2244A4A0400656518 /* ConsentDocument.swift */; };
 		8E0A43C3244A4A0400656518 /* LoginCustomWaitStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A43A3244A4A0400656518 /* LoginCustomWaitStepViewController.swift */; };
-		8E0A43CE244A60D800656518 /* Pods_CardinalKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31556B648F48DA664CEE80 /* Pods_CardinalKit_Example.framework */; };
 		8E0A43D5244A693D00656518 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0A43D4244A693D00656518 /* HealthKit.framework */; };
 		8E40DC042471E5940027536B /* CKNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40DC032471E5940027536B /* CKNetworkManager.swift */; };
 		8E6E1E092534F4100024B8DF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E082534F4100024B8DF /* OnboardingViewController.swift */; };
@@ -55,10 +54,10 @@
 		8E6E1E2E25353A1E0024B8DF /* PatientIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E2D25353A1E0024B8DF /* PatientIDView.swift */; };
 		8E6E1E3225353ABE0024B8DF /* ProfileUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E3125353ABE0024B8DF /* ProfileUIView.swift */; };
 		8E6E1E3425353AFE0024B8DF /* EmailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E1E3325353AFE0024B8DF /* EmailHelper.swift */; };
-		8E9CDE912591534B00C8A228 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE902591534B00C8A228 /* CareKitStore */; };
-		8E9CDE932591534B00C8A228 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE922591534B00C8A228 /* CareKitFHIR */; };
-		8E9CDE952591534B00C8A228 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE942591534B00C8A228 /* CareKit */; };
-		8E9CDE972591534B00C8A228 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE962591534B00C8A228 /* CareKitUI */; };
+		8E9CDE912591534B00C8A228 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE902591534B00C8A228 /* SwiftPackageProductDependency */; };
+		8E9CDE932591534B00C8A228 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE922591534B00C8A228 /* SwiftPackageProductDependency */; };
+		8E9CDE952591534B00C8A228 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE942591534B00C8A228 /* SwiftPackageProductDependency */; };
+		8E9CDE972591534B00C8A228 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9CDE962591534B00C8A228 /* SwiftPackageProductDependency */; };
 		8E9CDEA725916B2800C8A228 /* ScheduleViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CDEA625916B2800C8A228 /* ScheduleViewControllerRepresentable.swift */; };
 		8E9CDEA925916E6600C8A228 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CDEA825916E6600C8A228 /* ScheduleViewController.swift */; };
 		8E9CDEAD259170AD00C8A228 /* CKCareKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CDEAC259170AD00C8A228 /* CKCareKitManager.swift */; };
@@ -101,15 +100,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00480E2D79186BE9405F0F72 /* Pods-CardinalKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Tests/Pods-CardinalKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		07D78DA16FC9C3C7709EA243 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1D31556B648F48DA664CEE80 /* Pods_CardinalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F94C5F12536543600DF8866 /* SceneDelegate+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
+		41431BC3EFB32A3C587DCE28 /* Pods-CardinalKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		41DC264876E45FE5A3FD8701 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		58275A0CAB0C7223B21F375D /* Pods-CardinalKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Tests/Pods-CardinalKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CardinalKit Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CardinalKit Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AA5CD1C2188D392530510F /* CardinalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardinalKit.podspec; path = ../CardinalKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		77A9E3B0261A89B000EB5FEE /* ResourcesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesUIView.swift; sourceTree = "<group>"; };
 		77BBA8D2261B5DD2001750AA /* StudiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesView.swift; sourceTree = "<group>"; };
 		77BBA8D4261B5DEF001750AA /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
@@ -175,7 +171,7 @@
 		8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitRemoteSyncWithFirestore.swift; sourceTree = "<group>"; };
 		8EA664B32594387900B6A45A /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
-		CB97C14C759E56B88E4E3941 /* Pods_CardinalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CBE781E449E63155FB7B15 /* Pods_CardinalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D253D131250D1BDB00A363E4 /* CKSignInWithAppleStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKSignInWithAppleStep.swift; sourceTree = "<group>"; };
 		E235077624F7082700CC1899 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2680B1A260A72DD00B755EA /* LoginExistingUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginExistingUserViewController.swift; sourceTree = "<group>"; };
@@ -184,7 +180,7 @@
 		E2DF9F092500C9CE00A93B93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E2F1FD7524D61EDA006C39DF /* CKPropertyReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKPropertyReader.swift; sourceTree = "<group>"; };
 		E2F1FD7724D62064006C39DF /* CKConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CKConfiguration.plist; sourceTree = "<group>"; };
-		F30ABA7020E91EBA421A80F9 /* Pods-CardinalKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F4538E4227B0715157A44774 /* Pods-CardinalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,15 +188,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E9CDE952591534B00C8A228 /* CareKit in Frameworks */,
-				7785F60825C0646700234D6F /* (null) in Frameworks */,
-				8E0A43CE244A60D800656518 /* Pods_CardinalKit_Example.framework in Frameworks */,
-				8E9CDE972591534B00C8A228 /* CareKitUI in Frameworks */,
+				8E9CDE952591534B00C8A228 /* BuildFile in Frameworks */,
+				8E9CDE972591534B00C8A228 /* BuildFile in Frameworks */,
 				8E0A43D5244A693D00656518 /* HealthKit.framework in Frameworks */,
-				77A9E3B4261A903100EB5FEE /* SwiftUICharts in Frameworks */,
-				8E9CDE912591534B00C8A228 /* CareKitStore in Frameworks */,
-				8E9CDE932591534B00C8A228 /* CareKitFHIR in Frameworks */,
-				775F96BA261AB29100593E2C /* FASwiftUI in Frameworks */,
+				77A9E3B4261A903100EB5FEE /* BuildFile in Frameworks */,
+				8E9CDE912591534B00C8A228 /* BuildFile in Frameworks */,
+				8E9CDE932591534B00C8A228 /* BuildFile in Frameworks */,
+				775F96BA261AB29100593E2C /* BuildFile in Frameworks */,
+				0584E493482787442DEAC676 /* Pods_CardinalKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				8E0A43D4244A693D00656518 /* HealthKit.framework */,
-				1D31556B648F48DA664CEE80 /* Pods_CardinalKit_Example.framework */,
-				CB97C14C759E56B88E4E3941 /* Pods_CardinalKit_Tests.framework */,
+				B9CBE781E449E63155FB7B15 /* Pods_CardinalKit_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -498,10 +492,8 @@
 		A562A578C883F67F0DAE1385 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F30ABA7020E91EBA421A80F9 /* Pods-CardinalKit_Example.debug.xcconfig */,
-				630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */,
-				58275A0CAB0C7223B21F375D /* Pods-CardinalKit_Tests.debug.xcconfig */,
-				00480E2D79186BE9405F0F72 /* Pods-CardinalKit_Tests.release.xcconfig */,
+				41431BC3EFB32A3C587DCE28 /* Pods-CardinalKit_Example.debug.xcconfig */,
+				F4538E4227B0715157A44774 /* Pods-CardinalKit_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -513,12 +505,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CardinalKit_Example" */;
 			buildPhases = (
-				8A9C87B89C8DE46EAC03121F /* [CP] Check Pods Manifest.lock */,
+				B56112B448A84B44E4DC42E1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8E740AF552D1351413D250C9 /* [CP] Embed Pods Frameworks */,
 				8E0A43D0244A60D800656518 /* Embed Frameworks */,
+				7AD3BAE79431E552B675DDB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -526,12 +518,12 @@
 			);
 			name = CardinalKit_Example;
 			packageProductDependencies = (
-				8E9CDE902591534B00C8A228 /* CareKitStore */,
-				8E9CDE922591534B00C8A228 /* CareKitFHIR */,
-				8E9CDE942591534B00C8A228 /* CareKit */,
-				8E9CDE962591534B00C8A228 /* CareKitUI */,
-				77A9E3B3261A903100EB5FEE /* SwiftUICharts */,
-				775F96B9261AB29100593E2C /* FASwiftUI */,
+				8E9CDE902591534B00C8A228 /* SwiftPackageProductDependency */,
+				8E9CDE922591534B00C8A228 /* SwiftPackageProductDependency */,
+				8E9CDE942591534B00C8A228 /* SwiftPackageProductDependency */,
+				8E9CDE962591534B00C8A228 /* SwiftPackageProductDependency */,
+				77A9E3B3261A903100EB5FEE /* SwiftPackageProductDependency */,
+				775F96B9261AB29100593E2C /* SwiftPackageProductDependency */,
 			);
 			productName = CardinalKit;
 			productReference = 607FACD01AFB9204008FA782 /* CardinalKit Example.app */;
@@ -565,9 +557,9 @@
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
-				8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */,
-				77A9E3B2261A903100EB5FEE /* XCRemoteSwiftPackageReference "ChartView" */,
-				775F96B8261AB29100593E2C /* XCRemoteSwiftPackageReference "FASwiftUI" */,
+				8E9CDE8F2591534B00C8A228 /* RemoteSwiftPackageReference */,
+				77A9E3B2261A903100EB5FEE /* RemoteSwiftPackageReference */,
+				775F96B8261AB29100593E2C /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -594,29 +586,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A9C87B89C8DE46EAC03121F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CardinalKit_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E740AF552D1351413D250C9 /* [CP] Embed Pods Frameworks */ = {
+		7AD3BAE79431E552B675DDB7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -682,6 +652,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B56112B448A84B44E4DC42E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardinalKit_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -874,7 +866,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F30ABA7020E91EBA421A80F9 /* Pods-CardinalKit_Example.debug.xcconfig */;
+			baseConfigurationReference = 41431BC3EFB32A3C587DCE28 /* Pods-CardinalKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -900,7 +892,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 630884219A5CB1E45383122C /* Pods-CardinalKit_Example.release.xcconfig */;
+			baseConfigurationReference = F4538E4227B0715157A44774 /* Pods-CardinalKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -947,7 +939,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		775F96B8261AB29100593E2C /* XCRemoteSwiftPackageReference "FASwiftUI" */ = {
+		775F96B8261AB29100593E2C /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mattmaddux/FASwiftUI.git";
 			requirement = {
@@ -955,7 +947,7 @@
 				minimumVersion = 1.0.4;
 			};
 		};
-		77A9E3B2261A903100EB5FEE /* XCRemoteSwiftPackageReference "ChartView" */ = {
+		77A9E3B2261A903100EB5FEE /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView";
 			requirement = {
@@ -963,7 +955,7 @@
 				minimumVersion = 1.5.5;
 			};
 		};
-		8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */ = {
+		8E9CDE8F2591534B00C8A228 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
 			requirement = {
@@ -974,34 +966,34 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		775F96B9261AB29100593E2C /* FASwiftUI */ = {
+		775F96B9261AB29100593E2C /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 775F96B8261AB29100593E2C /* XCRemoteSwiftPackageReference "FASwiftUI" */;
+			package = 775F96B8261AB29100593E2C /* RemoteSwiftPackageReference */;
 			productName = FASwiftUI;
 		};
-		77A9E3B3261A903100EB5FEE /* SwiftUICharts */ = {
+		77A9E3B3261A903100EB5FEE /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 77A9E3B2261A903100EB5FEE /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = 77A9E3B2261A903100EB5FEE /* RemoteSwiftPackageReference */;
 			productName = SwiftUICharts;
 		};
-		8E9CDE902591534B00C8A228 /* CareKitStore */ = {
+		8E9CDE902591534B00C8A228 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */;
+			package = 8E9CDE8F2591534B00C8A228 /* RemoteSwiftPackageReference */;
 			productName = CareKitStore;
 		};
-		8E9CDE922591534B00C8A228 /* CareKitFHIR */ = {
+		8E9CDE922591534B00C8A228 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */;
+			package = 8E9CDE8F2591534B00C8A228 /* RemoteSwiftPackageReference */;
 			productName = CareKitFHIR;
 		};
-		8E9CDE942591534B00C8A228 /* CareKit */ = {
+		8E9CDE942591534B00C8A228 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */;
+			package = 8E9CDE8F2591534B00C8A228 /* RemoteSwiftPackageReference */;
 			productName = CareKit;
 		};
-		8E9CDE962591534B00C8A228 /* CareKitUI */ = {
+		8E9CDE962591534B00C8A228 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8E9CDE8F2591534B00C8A228 /* XCRemoteSwiftPackageReference "CareKit" */;
+			package = 8E9CDE8F2591534B00C8A228 /* RemoteSwiftPackageReference */;
 			productName = CareKitUI;
 		};
 /* End XCSwiftPackageProductDependency section */
